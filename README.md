@@ -1,4 +1,4 @@
-![Brothers in Arms Memorial](images/industry-night.png)
+![Brothers in Arms Memorial](images/brother_readme.png)
 
 # brothers_in_arms_CMYKD
 This repo is for Brothers in Arms FIP.
