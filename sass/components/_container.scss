@@ -31,6 +31,14 @@
     }
 }
 
+.container-inline {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
 .container-donorlist {
     display: flex;
     width: 100%;
@@ -98,6 +106,29 @@
     height: 500px;
 }
 
+// Form Layout
+textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-family: v.$body-font;
+    font-size: v.$body;
+    padding: 8px 12px 8px 12px;
+    border-radius: 0;
+    border: solid v.$grey .5px;
+}
+
+input {
+    width: 100%;
+    font-family: v.$body-font;
+    font-size: v.$body;
+    font-weight: 400;
+    padding: 8px 12px 8px 12px;
+    border-radius: 0;
+    border: solid v.$grey .5px;
+}
+
 @media screen and (min-width: 768px) {
     .container-2 {
         display: flex;
@@ -114,6 +145,10 @@
             height: auto;
             flex-shrink: 0;
         }
+    }
+
+    .container-inline {
+        flex-direction: row;
     }
 
     .container-donorlist {
