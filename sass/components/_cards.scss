@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as v;
+
+// Mobile Size
+.card-1 {
+    display: flex;
+    width: 288px;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: v.$lightgrey;
+}
+
+.donor-1 {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: #606060;
+
+    p {
+        color: v.$white;
+    }
+}
+
+.donor-2 {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: #9f9f9f;
+}
+
+.donor-3 {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: #e5e5e5;
+}
+
+.donor-list {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.card-letter {
+    display: flex;
+    width: 288px;
+    padding: 12px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: v.$lightgrey;
+}
+
+@media screen and (min-width: 768px) {
+    .card-1 {
+        width: 400px;
+    }
+}
