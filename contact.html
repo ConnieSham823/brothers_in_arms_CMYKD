@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Brothers in Arms</title>
+
+    <!-- JS -->
+    <!-- GSAP Library -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- Main JS -->
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Donor Page</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo" ><img src="./images/logo/logo-placeholder.png" alt="Brothers' in Arms Logo"></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donor.html">Donor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-donor" class="section-white orient-center">
+        <h2 class="display text-center">Contact Us</h2>
+        <div class="orient-left">
+          <!-- Form -->
+          <form class="container-1 orient-center">
+              <div class="container-inline">
+              <label class="hidden" for="first_name">First Name</label>
+              <input name="first_name" type="text" placeholder="First Name" id="first_name">
+
+              <label class="hidden" for="last_name">Last Name</label>
+              <input name="last_name" type="text" placeholder="Last Name" id="last_name">
+              </div>
+
+              <div class="container-inline">
+              <label class="hidden" for="email" >Email</label>
+              <input name="email" type="text" placeholder="Your Email" id="contact-email">
+
+              <label class="hidden" for="email">Phone Number</label>
+              <input name="phone_number" type="text" placeholder="Your Phone Number" id="phone_number">
+              </div>
+
+              <label class="hidden" for="contact_message">Message</label>
+              <textarea name="contact_message" id="contact_message" placeholder="Please tell us what concerns you or any questions you need answered."></textarea>
+
+              <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section id="contact-info" class="section-white">
+        <h2 class="hidden">Contact Information</h2>
+        <div class="container-1 orient-left">
+          <h3 class="header">Brothers in Arms Team</h3>
+          <p class="body-text">A 708, SHIPRA KRISHNA VISTA, Ahinsa Khand 1, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India</p>
+          <a href="#" class="body-text">+91 89754 01959</a>
+        </div>
+
+        <div class="container-1 orient-left">
+          <h3 class="header">Shrishti Foundation</h3>
+          <p class="body-text">A 708, SHIPRA KRISHNA VISTA, Ahinsa Khand 1, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India</p>
+          <a href="#" class="body-text">+91 89754 01959</a>
+        </div>
+
+        <!-- Maps -->
+        <div class="container-1 orient-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5837.4984596147015!2d-81.25360142325752!3d42.9835558711418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3779e9706c1%3A0x6b0cea8bf906455!2sFanshawe%20Downtown%20Campus!5e0!3m2!1sen!2sca!4v1738002055311!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <!-- Corporate Partnership -->
+      <section id="corp-partnership" class="section-white orient-center">
+        <div class="container-1 orient-center">
+          <h2 class="header text-center">Corporate Partnership Information</h2>
+          <p class="body-text text-center">This is where we are now and all the perks that is already unlocked.</p>
+          <a href="#" class="sec-btn">Fill a Form</a>
+        </div>
+      </section>
+
+      <!-- FaQ -->
+      <section id="faq" class="section-grey orient-center">
+        <div class="container-1 orient-center">
+          <h2 class="header text-center">FaQ</h2>
+          <p class="body-text text-center">Confused? Try have a look at out Frequently Asked Questions.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              What is the purpose of this project?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">This project is here to commemorate our Indian brother that fight alongside Canadian Army in World War 1.</p>
+            </div>
+          </div>
+
+          <div class="line-seperator"></div>
+
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              How can I Contribute?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">You can simply be a donor or share this website to your friends.</p>
+            </div>
+          </div>
+
+          <div class="line-seperator"></div>
+        
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              What will I get after donating?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">You will be a part of this project and get a unique merchandise.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center">
+        <h2 class="header text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>  
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
