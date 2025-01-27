@@ -24,6 +24,14 @@
 .body-text {
     font-family: v.$body-font;
     font-size: v.$body;
+    font-weight: 400;
+    color: v.$darkgrey;
+    line-height: 14px;
+}
+
+.caption {
+    font-family: v.$body-font;
+    font-size: v.$caption;
     color: v.$darkgrey;
     line-height: 14px;
 }
@@ -33,6 +41,18 @@
     font-size: v.$body;
     color: v.$darkgrey;
     line-height: 14px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-right {
+    text-align: end;
 }
 
 // Tablet Size
@@ -62,6 +82,13 @@
         color: v.$darkgrey;
         line-height: 18px;
     }
+
+    .caption {
+        font-family: v.$body-font;
+        font-size: v.$m-caption;
+        color: v.$darkgrey;
+        line-height: 14px;
+    }
 }
 
 // Desktop Size
@@ -90,5 +117,12 @@
         font-size: v.$l-body;
         color: v.$darkgrey;
         line-height: 20px;
+    }
+
+    .caption {
+        font-family: v.$body-font;
+        font-size: v.$l-caption;
+        color: v.$darkgrey;
+        line-height: 14px;
     }
 }
