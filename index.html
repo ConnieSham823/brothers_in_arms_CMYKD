@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OPTIONAL <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" /> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Brothers in Arms</title>
+
+    <!-- JS -->
+    <!-- GSAP Library -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+
+    <!-- Plyr OPTIONAL -->
+    <!-- <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script> -->
+
+    <!-- Main JS -->
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Website</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo" ><img src="./images/logo/logo-placeholder.png" alt="Brothers' in Arms Logo"></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donor.html">Donor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="section-white orient-center">
+        <h2 class="display text-center">Brothers in Arms</h2>
+        <div class="container-inline orient-left">
+          <a href="#" class="sec-btn">What is it?</a>
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section id="intro" class="section-white">
+        <h2 class="hidden">About Brothers in arms</h2>
+
+        <div class="container">
+          <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+          <div class="container-1 orient-left">
+            <h3 class="header">A Memory Worth Memorizing...</h3>
+            <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- History -->
+      <section id="history" class="section-white">
+        <h2 class="hidden">A Glimpse of History</h2>
+
+        <!-- Carousel -->
+        <div class="container bg-lightgrey orient-center">
+          <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+          <div class="container-1 orient-left history-detail">
+            <h3 class="header">Where it all Started...</h3>
+            <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+          </div>
+          
+          <div class="container-1 orient-center year">
+            <p class="sub-head">1900</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Letters from Soldiers -->
+      <section id="letters" class="section-white">
+        <h2 class="hidden">Letters from Soldiers</h2>
+        <!-- Headline Letters from Soldiers -->
+        <div id="letters-head" class="container-blur orient-center text-center">
+          <h3 class="header">Their Memories... in Letters</h3>
+          <p class="body-text">These are some of the letters written by the soldiers to their loved ones.</p>
+        </div>
+
+        <!-- Letters -->
+        <div id="letter-1" class="card-letter decor">
+          <h3 class="letter-author">A Memory Worth Memorizing...</h3>
+          <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+        </div>
+
+        <div id="letter-2" class="card-letter decor">
+          <h3 class="letter-author">A Memory Worth Memorizing...</h3>
+          <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy.</p>
+        </div>
+      </section>
+
+      <!-- Testimonies -->
+      <section id="testimonies" class="section-grey orient-center">
+        <h2 class="hidden">Testimonies</h2>
+
+        <!-- Testimony Lists - Carousel -->
+        <ul>
+          <li class="container-1 orient-center">
+            <p class="header text-center">“I believe that Indian and Canadian should be united together as what our ancestors did back in the days”</p>
+            <p class="body-text">-Amir Khan (Canadian Citizen)</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Virtual Exhibition -->
+      <section id="virtual-ex" class="section-white orient-center">
+        <h2 class="hidden">Virtual Exhibition</h2>
+
+        <div class="container-1 orient-center">
+          <div class="container-1 orient-center">
+            <h3 class="header text-center">Look at the Memorial Park</h3>
+            <p class="body-text text-center">You can navigate this interactive virtual environment</p>
+          </div>
+
+          <a href="#" class="sec-btn">Try it Now</a>
+        </div>
+      </section>
+
+      <!-- Memorial Park Map -->
+      <section id="map" class="section-white">
+        <h2 class="hidden">Memorial Park Map</h2>
+
+        <div class="container-1 orient-center">
+          <h3 class="header">It's All Planned Down</h3>
+          <p class="body-text text-center">You can navigate this interactive virtual environment</p>
+        </div>
+
+        <div class="container">
+          <img src="./images/park-map.png" alt="Memorial Park Map">
+        </div>
+      </section>
+
+      <!-- Image Gallery -->
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./images/tree-planting.jpeg" alt="Tree Planting">
+          </li>
+        </ul>
+      </div>
+
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center">
+        <h2 class="header text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>  
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

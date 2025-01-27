@@ -1,0 +1,162 @@
+@use "../abstracts/variables" as v;
+
+// Mobile Menu Style
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    z-index: 95;
+}
+
+#logo {
+
+    img {
+        width: 100px;
+        height: 100%;
+    }
+    
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    color: v.$black;
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    li {
+        margin: 16px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: v.$black;
+        font-size: v.$header;
+    }
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+// Hamburger Menu Style
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: v.$black;
+    border-radius: 2px;
+    transition: transform 0.3s ease , opacity 0.5s ease;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+  
+.line-top {
+    transform-origin: center;
+}
+  
+.line-bot {
+    transform-origin: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+}
+
+// Hamburger Animation
+.hamburger.active .line-top {
+    transform: rotate(45deg);
+    transform-origin: center
+}
+  
+.hamburger.active .line-bot {
+    transform: rotate(-45deg);
+    transform-origin: center
+}
+  
+.hamburger.active .line {
+    position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: auto;
+        background: none;
+        backdrop-filter: none;
+        color: v.$black;
+        z-index: 90;
+        align-items: end;
+    
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: row;
+            list-style: none;
+            text-align: center;
+        }
+    
+        li {
+            margin-left: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        a {
+            text-decoration: none;
+            color: v.$darkgrey;
+            font-size: v.$subhead;
+        }
+
+        a:hover {
+            color: v.$black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
