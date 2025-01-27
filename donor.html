@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- OPTIONAL <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" /> -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Brothers in Arms</title>
 
@@ -11,8 +11,8 @@
     <!-- GSAP Library -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 
-    <!-- Plyr OPTIONAL -->
-    <!-- <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script> -->
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
     <!-- Main JS -->
     <script defer src="./js/main.js"></script>
@@ -46,7 +46,200 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
-      
+      <section id="hero-donor" class="section-white orient-center">
+        <h2 class="display text-center">Build This with Us</h2>
+        <div class="container-inline orient-left">
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="container-1 orient-center">
+          <div class="line"></div>
+
+          <!-- Fund Raised -->
+          <div class="container">
+            <h3 class="header">CA$ 1.000.000</h3>
+            <p class="body-text">donated of CA$2.000.000 goal</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Donor -->
+      <section id="about-donor" class="section-grey orient-center">
+        <!-- Video -->
+        <div id="donor-video">
+          <video controls preload="metadata">
+            <source src="./video/video-placeholder.mp4" type="video/mp4">
+            <source src="./video/video-placeholder.webm" type="video/webm">
+            <p>Ooops, something went wrong. You may be using an oudated browser or have javascript disabled.</p>
+          </video>
+        </div>
+
+        <!-- Content -->
+        <div class="container bg-lightgrey orient-center">
+          <div class="container-1 orient-left history-detail">
+            <h3 class="header">What is a Donor?</h3>
+            <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donor Info -->
+      <section id="donors" class="section-white">
+        <h2 class="hidden">Top Donors and Donor Packages</h2>
+        <!-- Top Donors -->
+        <div id="top-donor" class="container orient-center">
+          <h3 class="header">Our Top Donor</h3>
+          <!-- Donor Container -->
+          <ol class="container-donorlist">
+            <li class="donor-1">
+              <p class="sub-head">Mr Amir Khan</p>
+              <p class="body-text">CA$ 1.000.000</p>
+            </li>
+
+            <li class="donor-2">
+              <p class="sub-head">Mr Amir Khan</p>
+              <p class="body-text">CA$ 1.000.000</p>
+            </li>
+
+            <li class="donor-3">
+              <p class="sub-head">Mr Amir Khan</p>
+              <p class="body-text">CA$ 1.000.000</p>
+            </li>
+
+            <li class="donor-list">
+              <p class="sub-head">Mr Amir Khan</p>
+              <p class="body-text">CA$ 1.000.000</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Packages -->
+        <div class="container orient-center">
+          <h3 class="header">Our Packages</h3>
+
+          <!-- Carousel -->
+          <div id="package-carousel" class="carousel">
+            <!-- Package 1 -->
+            <div class="container-2 orient-center">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+              <div class="container-1 orient-left history-detail">
+                <h4 class="sub-head">Donation Package #1 - Any Amount</h4>
+                <p class="body-text">Perks:</p>
+                <ul>
+                  <li class="body-text">Perks 1</li>
+                  <li class="body-text">Perks 2</li>
+                  <li class="body-text">Perks 3</li>
+                </ul>
+
+                <a href="#" class="prim-btn">Be a Donor</a>
+              </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="container-2 orient-center">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+              <div class="container-1 orient-left history-detail">
+                <h4 class="sub-head">Donation Package #2 - Any Amount</h4>
+                <p class="body-text">Perks:</p>
+                <ul>
+                  <li>Perks 1</li>
+                  <li>Perks 2</li>
+                  <li>Perks 3</li>
+                </ul>
+
+                <a href="#" class="prim-btn">Be a Donor</a>
+              </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="container-2 orient-center">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+              <div class="container-1 orient-left history-detail">
+                <h4 class="sub-head">Donation Package #3 - Any Amount</h4>
+                <p class="body-text">Perks:</p>
+                <ul>
+                  <li>Perks 1</li>
+                  <li>Perks 2</li>
+                  <li>Perks 3</li>
+                </ul>
+
+                <a href="#" class="prim-btn">Be a Donor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Milestone -->
+      <section id="milestone" class="section-grey orient-center">
+        <h2 class="hidden">Milestone</h2>
+
+        <!-- Header Milestone -->
+        <div class="container-1 orient-center">
+          <div class="container-1 orient-center">
+            <h3 class="header text-center">How far have we Gone?</h3>
+            <p class="body-text text-center">This is where we are now and all the perks that is already unlocked.</p>
+          </div>
+
+          <!-- Milestone Bar -->
+          <div class="line"></div>
+        </div>
+
+        <!-- Milestone Carousel -->
+        <div id="milestone-carousel" class="carousel">
+          <!-- Milestone 1 -->
+          <div class="container-2 orient-center">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="container-1 orient-center history-detail">
+              <h4 class="sub-head">Milestone 1</h4>
+              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="container-2 orient-center">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="container-1 orient-center history-detail">
+              <h4 class="sub-head">Milestone 2</h4>
+              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="container-2 orient-center">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="container-1 orient-center history-detail">
+              <h4 class="sub-head">Milestone 3</h4>
+              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center">
+        <h2 class="header text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
     
     </main>
 
