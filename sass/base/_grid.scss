@@ -5,6 +5,18 @@ main {
   margin-top: 160px;
 }
 
+// Line Separator
+.line-seperator {
+  border-top: .5px solid v.$darkgrey;
+  width: 100%;
+  margin: 12px auto;
+}
+
+.line-seperator-dash {
+  border-top: .5px dashed v.$darkgrey;
+  width: 100%;
+}
+
 /* ---Mini CSS reset--- */
 
 body,
