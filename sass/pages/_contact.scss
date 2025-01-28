@@ -58,3 +58,24 @@
         transform: rotate(45deg);
     }
 }
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    #contact-detail {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #map {
+        iframe {
+            width: 800px;
+        }
+        
+    }
+}
