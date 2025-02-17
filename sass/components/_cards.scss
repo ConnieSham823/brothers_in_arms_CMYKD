@@ -60,6 +60,68 @@
     background-color: v.$lightgrey;
 }
 
+.socmed-card {
+    padding: 24px;
+    width: 100%;
+    height: auto;
+
+    .socmed-img {
+        width: 100%;
+    }
+
+    .ig-head {
+        background-color: v.$white;
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
+        .ig-name {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+    
+            img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: solid 1 v.$red;
+            }
+        }
+    }
+
+    .ig-foot {
+        background-color: v.$white;
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+        .ig-name {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+    
+            img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: solid 1 v.$red;
+            }
+        }
+    }
+}
+
+
+
 @media screen and (min-width: 768px) {
     .card-1 {
         width: 400px;

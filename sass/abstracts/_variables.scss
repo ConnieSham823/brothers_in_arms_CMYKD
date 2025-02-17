@@ -1,8 +1,9 @@
 @use "fonts";
 
 // Font Family
-$header-font: "Rebound";
+$header-font: "DIN-Condensed-Bold";
 $body-font: Arial, sans-serif;
+$quote: "hoefler-text-regular";
 
 // Font Size (Mobile First)
 $body: 12px;
@@ -31,9 +32,10 @@ $black: #1B1A1A;
 $white: #FFFDFB;
 
 // Primary - Accent
-$red: #AD0000;
+$red: #D80522;
 $blue: #5384A2;
-$orange: #F2782F;
+$green: #1E451F;
+$orange: #FF671F;
 $brown: #D9B595;
 
 // Utility

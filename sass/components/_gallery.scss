@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.image-items-left {
+    display: flex;
+    gap: 20px;
+    animation: slideleft infinite 40s linear;
+    width: max-content;
+
+    img {
+        height: auto;
+        max-height: 300px; 
+        width: auto; 
+        object-fit: cover;
+    }
+}
+  
+// Animation
+@keyframes slideleft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.image-items-right {
+    display: flex;
+    gap: 20px;
+    animation: slideright infinite 40s linear;
+    width: max-content;
+
+    img {
+        height: auto;
+        max-height: 300px; 
+        width: auto; 
+        object-fit: cover;
+    }
+}
+
+@keyframes slideright {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+}
+  
+// Tablet Size
+@media screen and (min-width: 768px) {
+}

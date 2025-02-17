@@ -6,8 +6,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +51,28 @@
         text-decoration: none;
         color: v.$black;
         font-size: v.$header;
+    }
+
+    .navlink {
+        color: v.$grey;
+        position: relative;
+    }
+
+    .navlink:hover {
+        text-decoration: none;
+        color: v.$red;
+        text-decoration: underline;
+    }
+
+    .navlink.active {
+        text-decoration: none;
+        color: v.$red;
+        text-decoration: underline;
+    }
+
+    .prim-btn {
+        font-size: v.$body;
+        color: v.$white;
     }
 }
 
@@ -110,24 +130,45 @@
     position: absolute;
 }
 
+#donor-btn-desktop {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     #main-header {
         padding-left: 24px;
         padding-right: 24px;
+        display: flex;
+        align-items: center;
+        background: white;
+        transition: transform 0.3s ease-in-out;
     }
-    
+
+    .hide-nav {
+        transform: translateY(-100%);
+    }
+
+    #donor-btn-desktop {
+        display: block;
+    }
+
+
     .mobile-menu {
         display: flex;
         position: relative;
-        top: 0;
+        top: 10px;
         left: 0;
-        width: 300px;
+        width: 400px;
         height: auto;
         background: none;
         backdrop-filter: none;
         color: v.$black;
         z-index: 90;
-        align-items: end;
+        align-items: center;
+
+        #donor-btn-mobile {
+            display: none;
+        }
     
         ul {
             display: flex;

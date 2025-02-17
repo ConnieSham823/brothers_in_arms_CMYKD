@@ -6,19 +6,36 @@
     font-size: v.$display;
     color: v.$black;
     margin-bottom: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
 }
 
 .header {
     font-family: v.$header-font;
     font-size: v.$header;
     color: v.$black;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
 }
 
 .sub-head {
     font-family: v.$header-font;
     font-size: v.$subhead;
     color: v.$black;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.sec-head {
+    font-family: v.$quote;
+    font-size: v.$header;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+}
+
+.quote {
+    font-family: v.$quote;
+    font-size: v.$header;
 }
 
 .body-text {
