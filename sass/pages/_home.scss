@@ -3,31 +3,96 @@
 // Mobile Style
 #hero {
     margin: 128px auto;
-}
-
-#letters {
-    height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .card-letter {
-        position: absolute;
+    h2 {
+        margin-bottom: 0;
     }
 
-    #letter-1 {
-        top: 60px;
-        left: 150px;
+    .sec-head {
+        margin-bottom: 20px;
     }
 
-    #letter-2 {
-        bottom: 60px;
-        right: 150px;
+    #img-1 {
+        width: 150px;
+        top: -100px;
+        right: -5%;
+    }
+
+    #img-2 {
+        width: 100px;
+        top: -70px;
+        left: 10%;
+    }
+
+    #img-3 {
+        width: 150px;
+        bottom: -100px;
+        left: -5%;
+    }
+
+    #img-4 {
+        width: 120px;
+        bottom: -100px;
+        right: -5%;
+    }
+
+
+}
+
+#abt-park {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .arrow-control {
+        gap: 40px;
+    }
+}
+
+#latest-blogs {
+    .container-inline {
+        justify-content: space-between;
+        padding: 24px;
+        align-items: center;
+    }
+}
+
+#social-media {
+    background-color: v.$black;
+    margin: 0px auto;
+    
+    h2 {
+        color: v.$white;
+    }
+
+    .socmed-cont {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+
+    .container-inline {
+        justify-content: space-between;
+        padding: 24px;
+        align-items: center;
     }
 }
 
 #join-us {
     padding: 24px;
+
+    img {
+        width: 100px;
+        margin-bottom: 30px;
+    }
 }
 
 // Tablet Size

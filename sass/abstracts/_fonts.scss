@@ -1,11 +1,21 @@
 // Headline/Display - Rebound
 // ==================================
 
-// Regular
+// Header / Display
 @font-face {
-  font-family: "Rebound";
-  src: url("../fonts/Rebound.woff2") format("woff2"),
-    url("../fonts/Rebound.woff") format("woff");
+  font-family: "DIN-Condensed-Bold";
+  src: url("../fonts/DIN-Condensed-Bold.woff2") format("woff2"),
+    url("../fonts/DIN-Condensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Caption
+@font-face {
+  font-family: "hoefler-text-regular";
+  src: url("../fonts/hoefler-text-regular.woff2") format("woff2"),
+    url("../fonts/hoefler-text-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
