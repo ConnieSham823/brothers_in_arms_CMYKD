@@ -41,6 +41,36 @@
     ul {
         list-style: none;
         text-align: center;
+
+        .drop-down {
+            transition: transform 0.3s ease; 
+                
+            .drop-down-menus {
+                display: none;
+                list-style: none;
+                margin-top: 8px;
+                padding: 20px;
+                background-color: #f4f2f0;
+
+                li {
+                    padding: 5px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                a {
+                    display: block;
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .drop-down.active .drop-down-menus {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 
     li {
@@ -140,13 +170,13 @@
         padding-right: 24px;
         display: flex;
         align-items: center;
-        background: white;
+        background: v.$white;
         transition: transform 0.3s ease-in-out;
     }
 
     .hide-nav {
         transform: translateY(-100%);
-    }
+    }    
 
     #donor-btn-desktop {
         display: block;
@@ -165,6 +195,46 @@
         color: v.$black;
         z-index: 90;
         align-items: center;
+
+        // History Dropdown
+        ul {
+            list-style: none;
+            text-align: center;
+    
+            .drop-down {
+                transition: transform 0.3s ease; 
+                    
+                .drop-down-menus {
+                    display: none;
+                    position: absolute;
+                    top: 10%;
+                    left: -7%;
+                    list-style: none;
+                    margin-top: 8px;
+                    padding: 20px;
+                    background-color: v.$white;
+                    z-index: -10;
+    
+                    li {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                    }
+    
+                    a {
+                        display: block;
+                        margin: 0;
+                        font-size: v.$subhead
+                    }
+                }
+            }
+    
+            .drop-down:hover .drop-down-menus {
+                display: block;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
 
         #donor-btn-mobile {
             display: none;

@@ -16,6 +16,31 @@ function toggleHamburger() {
 
 hamburger.addEventListener('click', toggleHamburger);
 
+// Dropdown Menu
+const dropDown = document.querySelectorAll(".drop-down-toggle");
+
+function dropdownToggle(e) {
+    e.preventDefault();
+
+    const parent = this.parentElement;
+    parent.classList.toggle("active");
+}
+
+function closeDropdown(e) {
+    if (!e.target.closest(".drop-down")) {
+        document.querySelectorAll(".drop-down").forEach((dropdown) => {
+            dropdown.classList.remove("active");
+        });
+    }
+}
+
+dropDown.forEach((toggle) => {
+    toggle.addEventListener("click", dropdownToggle);
+});
+
+document.addEventListener("click", closeDropdown);
+
+
 // Current Page
 const navLinks = document.querySelectorAll(".navlink");
 console.log(navLinks);

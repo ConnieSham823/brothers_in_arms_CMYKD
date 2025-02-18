@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Brothers in Arms</title>
+
+    <!-- JS -->
+    <!-- GSAP Library -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- Main JS -->
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Website</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="drop-down">
+            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <ul class="drop-down-menus">
+              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+            </ul>
+          </li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="contact.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="donors" class="navlink" href="contact.html">Donors</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="contact.html">Events</a></li>
+          <li class="sub-head"><a data-page="contacts" class="navlink" href="contact.html">Contacts</a></li>
+        </ul>
+        <br>
+        <a id="donor-btn-mobile" href="#" class="prim-btn">Be a Donor</a>
+      </nav>
+
+      <a id="donor-btn-desktop" href="#" class="prim-btn">Be a Donor</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="history-hero" class="section-white orient-center">
+        <h2 class="hidden">Victoria Crosses</h2>
+  
+        <nav id="history-nav">
+          <ul>
+            <li class="display"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+            <li class="display"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+            <li class="display"><a data-page="history" class="navlink" href="history.html">History</a></li>
+          </ul>
+        </nav>
+
+        <p class="body-text text-center">Historical Milestones Brothers in Arms Memorial</p>
+      </section>
+
+      <!-- About Victoria Crosses -->
+      <section id="about-vc" class="section-white orient-center">
+        <h2 class="hidden">About Victoria Crosses</h2>
+        <!-- Victoria Crosses -->
+        <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+        <!-- Content -->
+        <div class="container-1 orient-center">
+          <p class="body-text text-center">The Victoria Cross (VC) is the highest military honor awarded for extraordinary bravery in combat. Established in 1856 by Queen Victoria, the medal is given to soldiers who display valor beyond duty, often in the face of certain death.</p>
+
+          <p class="body-text text-center">During World War I, both Canadian and Indian soldiers fought side by side, demonstrating incredible courage on the battlefield. Their heroic actions earned them the Victoria Cross, cementing their place in history.</p>
+        </div>
+      </section>
+
+      <!-- Victoria Crosses Info -->
+      <section id="vc-summary">
+        <h2 class="hidden">Victoria Crosses Medal Information</h2>
+
+        <div id="vc-info">
+          <div class="container-1">
+            <h3 class="display">11</h3>
+            <p class="sub-head">Indian Army Soldiers</p>
+            <p class="body-text">Received the Victoria Cross for bravery during WWI.
+            </p>
+          </div>
+
+          <div class="container-1 bg-lightgrey">
+            <h3 class="display">69</h3>
+            <p class="sub-head">Canadian Army Soldiers</p>
+            <p class="body-text">Were awarded the Victoria Cross for acts of heroism.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Victoria Crosses Medal Winner -->
+       <section id="vc-medal-winners" class="section-white">
+        <h2 class="hidden">Victoria Crosses Medal Winners</h2>
+
+        <div class="vc-winner-cont">
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+
+          <div class="container-inline">
+            <img src="./images/placeholder-img.jpg" width="100px" height="100px" alt="Image of War">
+
+            <div class="container">
+              <p class="sub-head">Khudadad Khan</p>
+              <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center">
+        <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
+        <h2 class="display text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+
+        <div class="line-seperator"></div>
+
+        <div class="container-1 orient-center">
+          <p class="body-text">Or contribute by being a donour</p>
+
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+      </section>
+
+      
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>  
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
