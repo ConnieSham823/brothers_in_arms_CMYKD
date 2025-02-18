@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+
+#latest-blogs {
+    .container-inline {
+        justify-content: space-between;
+        padding: 24px;
+        align-items: center;
+    }
+}
+
+#other-blogs {
+    .container-inline {
+        justify-content: space-between;
+        padding: 24px;
+        align-items: center;
+    }
+}
