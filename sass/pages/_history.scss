@@ -1,0 +1,152 @@
+@use "../abstracts/variables" as v;
+
+#history-hero {
+    margin-bottom: 100px;
+}
+
+#history-nav {
+    display: flex;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 90;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        #victoria {
+            white-space: nowrap;
+        }
+
+        #letters {
+            white-space: nowrap;
+        }
+
+        li {
+            list-style: none;
+            padding: 0 20px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .navlink {
+        color: v.$grey;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .navlink:hover {
+        text-decoration: none;
+        color: v.$red;
+    }
+
+    .navlink.active {
+        text-decoration: none;
+        color: v.$red;
+    }
+}
+
+.history-highlight {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.history-line-1 {
+    position: absolute;
+    z-index: 1;
+    left: 6.75%;
+    top: 10%;
+    overflow: hidden;
+}
+
+.history-line {
+    position: absolute;
+    z-index: 1;
+    left: 6.75%;
+    top: -10%;
+    overflow: hidden;
+}
+
+.history-line-end {
+    position: absolute;
+    z-index: 1;
+    left: 6.75%;
+    top: -440%;
+    overflow: hidden;
+}
+
+.history-circle {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+}
+
+.history-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 24px 24px 24px 56px;
+    gap: 20px;
+}
+
+// Victoria Crosses
+#vc-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .container-1 {
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.vc-winner-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    .container-inline {
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+    }
+}
+
+// Letters
+.letter-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.card-letter {
+    animation: slideleft infinite 40s linear;
+}
+  
+// Animation
+@keyframes slideleft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
