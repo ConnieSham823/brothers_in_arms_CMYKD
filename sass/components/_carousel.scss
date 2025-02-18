@@ -16,6 +16,42 @@
     }
 }
 
+.socmed-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .carousel-item-socmed {
+        display: flex;
+        padding: 24px;
+        gap: 48px;
+
+        .slide-socmed {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+
+.milestone-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .milestone-item {
+        display: flex;
+        padding: 24px;
+        gap: 48px;
+
+        .slide-milestone {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+
 // Bullet Pagination
 .pagination {
     display: flex;
@@ -40,3 +76,63 @@
     background: v.$black;
     transform: scale(1.2);
 }
+
+// Socmed Pagination
+.socmed-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+
+    .bullet-socmed {
+        width: 10px;
+        height: 10px;
+        background: v.$white;
+        border-radius: 50%;
+        opacity: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .bullet-socmed.active {
+        background: v.$white;
+        transform: scale(1.2);
+    }
+    
+}
+
+// Milestone Pagination
+.milestone-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+
+    .bullet-page {
+        width: 20px;
+        height: 20px;
+        background: v.$grey;
+        border-radius: 50%;
+        opacity: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .bullet-page.active {
+        background: v.$orange;
+        transform: scale(1.2);
+        opacity: 100%;
+
+        outline: 3px solid v.$red;  
+        outline-offset: 3px;
+    }
+    
+}
+

@@ -30,13 +30,30 @@
     justify-content: center;
     align-items: center;
     transition: .3s all ease-in-out;
-
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .sec-btn:hover {
-    background-color: v.$black;
+    background-color: v.$orange;
     color: v.$white;
+    border: none;
+}
+
+.ter-btn {
+    padding: 12px 18px 12px 18px;
+    border: solid v.$white .5px;
+    color: v.$white;
+    font-family: v.$body-font;
+    font-size: v.$body;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+
+.ter-btn:hover {
+    background-color: v.$orange;
+    color: v.$white;
+    border: none;
 }
 
