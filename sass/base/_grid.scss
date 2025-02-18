@@ -5,6 +5,10 @@ main {
   margin-top: 160px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 // Line Separator
 .line-seperator {
   border-top: .5px solid v.$darkgrey;

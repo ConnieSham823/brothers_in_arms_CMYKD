@@ -15,3 +15,55 @@
         align-items: center;
     }
 }
+
+// Share Icons
+#share {
+    margin-top: 20px;
+    .socmed-cont {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            li {
+                list-style: none;
+
+                svg {
+                    color: v.$black;
+                }
+            }
+        }
+    }
+}
+
+// Comments
+#comment {
+    padding: 24px;
+
+    .comment-form {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .comments {
+        background-color: v.$white;
+        margin-top: 20px;
+        border: solid 1px v.$lightgrey;
+
+        .comment-content {
+            width: 100%;
+            padding: 12px;
+            
+        }
+
+        .container-inline {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+    }
+}
