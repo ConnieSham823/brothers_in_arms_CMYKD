@@ -52,6 +52,10 @@
     color: v.$darkgrey;
     line-height: 14px;
 }
+.letter-quote {
+    font-family: v.$quote;
+    font-size: v.$subhead;
+}
 
 .letter-author {
     font-family: v.$header-font;
@@ -70,6 +74,10 @@
 
 .text-right {
     text-align: end;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 // Tablet Size
