@@ -61,9 +61,6 @@
 }
 
 .socmed-card {
-    padding: 24px;
-    width: 100%;
-    height: auto;
 
     .socmed-img {
         width: 100%;
@@ -98,24 +95,52 @@
         background-color: v.$white;
         display: flex;
         width: auto;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 12px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-    
-        .ig-name {
+
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .ig-foot-detail {
             display: flex;
             flex-direction: row;
-            gap: 10px;
-            align-items: center;
-    
-            img {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                border: solid 1 v.$red;
+            justify-content: space-between;
+
+                .ig-name {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+        
+                img {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: solid 1 v.$red;
+                }
             }
+        }
+    }
+}
+
+// Shop Card
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+
+    div {
+        margin-top: 14px;
+        margin-bottom: 14px;
+
+        ul {
+            margin-top: 10px;
+            margin-left: 14px;
+
         }
     }
 }

@@ -8,11 +8,17 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding: 16px;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 
     .container-2 {
         flex: 0 0 auto;
         width: 80%;
+    }
+
+    ul {
+        li {
+            margin-left: 12px;
+        }
     }
 }
   
@@ -61,6 +67,53 @@
         margin-top: 120px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+// Donors
+#donors {
+    margin-left: 24px;
+}
+
+// Sliding Logo Sponsors
+@keyframes slider {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%)
+    }
+}
+
+.sliding-logo {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    position: relative;
+}
+
+.sliding-logo:before,
+.sliding-logot:after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    content: "";
+    z-index: 10;
+}
+
+.sliding-logo:hover .title-slide {
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 20s slider infinite linear;
+
+    img {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
     }
 }
 
@@ -169,6 +222,13 @@
             }
         }
     }
+}
+
+// Support CTA
+#support-cta {
+    background-color: v.$black;
+    color: v.$white;
+    gap: 20px;
 }
 
 @media screen and (min-width: 1200px) {

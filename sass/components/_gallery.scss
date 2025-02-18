@@ -1,57 +1,35 @@
 @use "../abstracts/variables" as v;
 
-.gallery-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
+// Sliding Logo Sponsors
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%)
+  }
 }
 
-.image-items-left {
-    display: flex;
-    gap: 20px;
-    animation: slideleft infinite 40s linear;
-    width: max-content;
-
-    img {
-        height: auto;
-        max-height: 300px; 
-        width: auto; 
-        object-fit: cover;
-    }
-}
-  
-// Animation
-@keyframes slideleft {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+.sliding-img {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  position: relative;
 }
 
-.image-items-right {
-    display: flex;
-    gap: 20px;
-    animation: slideright infinite 40s linear;
-    width: max-content;
-
-    img {
-        height: auto;
-        max-height: 300px; 
-        width: auto; 
-        object-fit: cover;
-    }
+.sliding-img:hover .title-slide {
+  animation-play-state: paused;
 }
 
-@keyframes slideright {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
+.img-slide {
+  display: inline-block;
+  animation: 20s slider infinite linear;
+
+  img {
+      width: 250px;
+      height: 250px;
+      padding: 20px;
+  }
 }
   
 // Tablet Size

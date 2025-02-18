@@ -24,7 +24,7 @@
     <!-- NAVIGATION -->
     <header id="main-header" class="">
       <div>
-        <a href="index.html" id="logo" ><img src="./images/logo/logo-placeholder.png" alt="Brothers' in Arms Logo"></a>
+        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
 
         <div class="hamburger-menu">
           <button class="hamburger" aria-label="Toggle Menu">
@@ -36,11 +36,25 @@
 
       <nav class="mobile-menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="donor.html">Donor</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="drop-down">
+            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <ul class="drop-down-menus">
+              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+            </ul>
+          </li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="donor" class="navlink" href="donor.html">Donor</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
         </ul>
+        <br>
+        <a id="donor-btn-mobile" href="#" class="prim-btn">Be a Donor</a>
       </nav>
+
+      <a id="donor-btn-desktop" href="#" class="prim-btn">Be a Donor</a>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -48,16 +62,13 @@
       <!-- Hero Section -->
       <section id="hero-donor" class="section-white orient-center">
         <h2 class="display text-center">Build This with Us</h2>
-        <div class="container-inline orient-left">
-          <a href="#" class="prim-btn">Be a Donor</a>
-        </div>
 
         <!-- Progress Bar -->
         <div class="container-1 orient-center">
           <div class="line"></div>
 
           <!-- Fund Raised -->
-          <div class="container">
+          <div class="container orient-center">
             <h3 class="header">CA$ 1.000.000</h3>
             <p class="body-text">donated of CA$2.000.000 goal</p>
           </div>
@@ -77,7 +88,7 @@
 
         <!-- Content -->
         <div class="container bg-lightgrey orient-center">
-          <div class="container-1 orient-left history-detail">
+          <div class="container-1 orient-left">
             <h3 class="header">What is a Donor?</h3>
             <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
           </div>
@@ -124,16 +135,14 @@
             <div class="container-2 orient-center">
               <img src="./images/placeholder-img.jpg" alt="Image of War">
 
-              <div class="container-1 orient-left history-detail">
+              <div class="container-1 orient-left">
                 <h4 class="sub-head">Donation Package #1 - Any Amount</h4>
-                <p class="body-text">Perks:</p>
+                <p class="body-text bold">Perks:</p>
                 <ul>
                   <li class="body-text">Perks 1</li>
                   <li class="body-text">Perks 2</li>
                   <li class="body-text">Perks 3</li>
                 </ul>
-
-                <a href="#" class="prim-btn">Be a Donor</a>
               </div>
             </div>
 
@@ -141,16 +150,14 @@
             <div class="container-2 orient-center">
               <img src="./images/placeholder-img.jpg" alt="Image of War">
 
-              <div class="container-1 orient-left history-detail">
+              <div class="container-1 orient-left">
                 <h4 class="sub-head">Donation Package #2 - Any Amount</h4>
-                <p class="body-text">Perks:</p>
+                <p class="body-text bold">Perks:</p>
                 <ul>
-                  <li>Perks 1</li>
-                  <li>Perks 2</li>
-                  <li>Perks 3</li>
+                  <li class="body-text">Perks 1</li>
+                  <li class="body-text">Perks 2</li>
+                  <li class="body-text">Perks 3</li>
                 </ul>
-
-                <a href="#" class="prim-btn">Be a Donor</a>
               </div>
             </div>
 
@@ -158,20 +165,44 @@
             <div class="container-2 orient-center">
               <img src="./images/placeholder-img.jpg" alt="Image of War">
 
-              <div class="container-1 orient-left history-detail">
+              <div class="container-1 orient-left">
                 <h4 class="sub-head">Donation Package #3 - Any Amount</h4>
-                <p class="body-text">Perks:</p>
+                <p class="body-text bold">Perks:</p>
                 <ul>
-                  <li>Perks 1</li>
-                  <li>Perks 2</li>
-                  <li>Perks 3</li>
+                  <li class="body-text">Perks 1</li>
+                  <li class="body-text">Perks 2</li>
+                  <li class="body-text">Perks 3</li>
                 </ul>
-
-                <a href="#" class="prim-btn">Be a Donor</a>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Sponsors -->
+      <section class="section-white orient-center">
+        <h2 class="header">Sponsors</h2>
+
+        <!-- Sliding Logo -->
+        <div class="sliding-logo">
+          <div class="logo-slide">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+          </div>
+
+          <div class="logo-slide">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+          </div>
+
+          <div class="logo-slide">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+          </div>
+        </div>  
       </section>
 
       <!-- Milestone -->
@@ -189,47 +220,182 @@
           <div class="line"></div>
         </div>
 
-        <!-- Milestone Carousel -->
-        <div id="milestone-carousel" class="carousel">
-          <!-- Milestone 1 -->
-          <div class="container-2">
-            <img src="./images/placeholder-img.jpg" alt="Image of War">
+        <!-- Milestone Carousel -->         
+        <div class="milestone-carousel">
+          <!-- Pagination Bullets -->
+          <ul class="milestone-pagination">
+            <li class="bullet-page active" data-index="0"></li>
+            <li class="bullet-page" data-index="1"></li>
+            <li class="bullet-page" data-index="2"></li>
+          </ul>
 
-            <div class="container-1">
-              <h4 class="sub-head">Milestone 1 - <span class="body-text achieved">Achieved</span></h4>
-              <p class="caption">CA$ 10.000</p>
-              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+          <div class="milestone-item">
+            <!-- Milestone 1 -->
+            <div class="container-2 slide-milestone">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+              <div class="container-1">
+                <h4 class="sub-head">Milestone 1 - <span class="caption achieved">Achieved</span></h4>
+                <p class="caption">CA$ 10.000</p>
+                <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Milestone 2 -->
-          <div class="container-2">
-            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <!-- Milestone 2 -->
+            <div class="container-2 slide-milestone">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
 
-            <div class="container-1">
-              <h4 class="sub-head">Milestone 2 - <span class="body-text locked">Locked</span></h4>
-              <p class="caption">CA$ 20.000</p>
-              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+              <div class="container-1">
+                <h4 class="sub-head">Milestone 2 - <span class="caption locked">Locked</span></h4>
+                <p class="caption">CA$ 20.000</p>
+                <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- Milestone 3 -->
-          <div class="container-2">
-            <img src="./images/placeholder-img.jpg" alt="Image of War">
+            <!-- Milestone 3 -->
+            <div class="container-2 slide-milestone">
+              <img src="./images/placeholder-img.jpg" alt="Image of War">
 
-            <div class="container-1">
-              <h4 class="sub-head">Milestone 3 - <span class="body-text locked">Locked</span></h4>
-              <p class="caption">CA$ 30.000</p>
-              <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+              <div class="container-1">
+                <h4 class="sub-head">Milestone 3 - <span class="caption locked">Locked</span></h4>
+                <p class="caption">CA$ 30.000</p>
+                <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Donor Form -->
+      <section id="be-a-donor" class="section-white orient-center">
+        <h2 class="header text-center">Be a Donor</h2>
+        <p class="body-text text-center">Donate however much you want to support the campaign!</p>
+
+        <!-- Donor Form -->
+        <div id="donor-form">
+          <!-- Form -->
+          <form class="container-form orient-center">
+              <div class="container-inline">
+                <label class="hidden" for="first_name">First Name</label>
+                <input name="first_name" type="text" placeholder="First Name" id="first_name">
+
+                <label class="hidden" for="last_name">Last Name</label>
+                <input name="last_name" type="text" placeholder="Last Name" id="last_name">
+              </div>
+
+              <div class="container-inline">
+                <label class="hidden" for="email" >Email</label>
+                <input name="email" type="text" placeholder="Your Email" id="contact-email">
+
+                <label class="hidden" for="phone">Phone Number</label>
+                <input name="phone_number" type="text" placeholder="Your Phone Number" id="phone_number">
+              </div>
+              
+              <label class="hidden" for="orgname">Organization Name</label>
+              <input name="phone_number" type="text" placeholder="Organization Name / Leave it blank to be anonymous" id="org_name">
+
+              <label class="hidden" for="donateamount">Donate Amount</label>
+              <input name="phone_number" type="text" placeholder="Donate Amount" id="donate_amount">
+
+              <label class="hidden" for="contact_message">Message</label>
+              <textarea name="contact_message" id="contact_message" placeholder="Please tell us what concerns you or any questions you need answered."></textarea>
+
+              <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+
+      <!-- Shop -->
+      <section id="shop" class="section-grey orient-center">
+        <h2 class="header">Shop</h2>
+        <p class="body-text text-center">Show your support in another way by buying our merchandise and use it!</p>
+
+        <!-- Shop list -->
+        <div class="container shop-cont">
+          <!-- Item 1 -->
+          <div class="shop-card">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="orient-left">
+              <h4 class="sub-head">Sticker Pack 1</h4>
+              <p class="body-text bold">Consist of ...</p>
+              <ul>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+              </ul>
+            </div>
+
+            <a href="#" class="prim-btn">Buy</a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="shop-card">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="orient-left">
+              <h4 class="sub-head">Sticker Pack 2</h4>
+              <p class="body-text bold">Consist of ...</p>
+              <ul>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+              </ul>
+            </div>
+
+            <a href="#" class="prim-btn">Buy</a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="shop-card">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="orient-left">
+              <h4 class="sub-head">Sticker Pack 3</h4>
+              <p class="body-text bold">Consist of ...</p>
+              <ul>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+              </ul>
+            </div>
+
+            <a href="#" class="prim-btn">Buy</a>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="shop-card">
+            <img src="./images/placeholder-img.jpg" alt="Image of War">
+
+            <div class="orient-left">
+              <h4 class="sub-head">Sticker Pack 4</h4>
+              <p class="body-text bold">Consist of ...</p>
+              <ul>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+                <li class="body-text">Detail 1</li>
+              </ul>
+            </div>
+
+            <a href="#" class="prim-btn">Buy</a>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- CTA to Support -->
+      <section id="support-cta" class="section-grey orient-center">
+        <h2 class="hidden">Support CTA</h2>
+        <p class="quote text-center">So many way to support us! just spread our project to the one (or more) you loving!</p>
+
+        <a href="#" class="ter-btn">I'm In!</a>
+      </section>
+
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
       <section id="join-us" class="section-white orient-center">
-        <h2 class="header text-center">Join Us to Commemorate</h2>
+        <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
+        <h2 class="display text-center">Join Us to Commemorate</h2>
 
         <div class="container orient-center">
           <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
@@ -242,8 +408,15 @@
             <input type="submit" value="Send" class="prim-btn">
           </form>
         </div>
+
+        <div class="line-seperator"></div>
+
+        <div class="container-1 orient-center">
+          <p class="body-text">Or contribute by being a donour</p>
+
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
       </section>
-    
     </main>
 
     <!-- FOOTER -->
