@@ -83,6 +83,28 @@
     font-weight: 800;
 }
 
+// Text Color
+.t-red {
+    color: v.$red;
+}
+
+.t-orange {
+    color: v.$orange;
+}
+
+.t-green {
+    color: v.$green;
+}
+
+.t-brown {
+    color: v.$brown;
+}
+
+.t-blue {
+    color: v.$blue;
+}
+
+
 // Tablet Size
 @media screen and (min-width: 768px) {
     .display {

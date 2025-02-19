@@ -203,12 +203,13 @@
     
             .drop-down {
                 transition: transform 0.3s ease; 
+                height: 22.5px;
                     
                 .drop-down-menus {
                     display: none;
                     position: absolute;
                     top: 10%;
-                    left: -7%;
+                    left: -4.5%;
                     list-style: none;
                     margin-top: 8px;
                     padding: 20px;
@@ -273,5 +274,69 @@
 
     .hamburger {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main-header {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        background: v.$white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hide-nav {
+        transform: translateY(-100%);
+    }    
+
+    #donor-btn-desktop {
+        display: block;
+    }
+
+
+    .mobile-menu {
+
+        // History Dropdown
+        ul {
+            list-style: none;
+            text-align: center;
+    
+            .drop-down {
+                transition: transform 0.3s ease; 
+                height: 23.5px;
+                    
+                .drop-down-menus {
+                    display: none;
+                    position: absolute;
+                    top: 10%;
+                    left: -4.5%;
+                    list-style: none;
+                    margin-top: 8px;
+                    padding: 20px;
+                    background-color: v.$white;
+                    z-index: -10;
+    
+                    li {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                    }
+    
+                    a {
+                        display: block;
+                        margin: 0;
+                        font-size: v.$subhead
+                    }
+                }
+            }
+    
+            .drop-down:hover .drop-down-menus {
+                display: block;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     }
 }

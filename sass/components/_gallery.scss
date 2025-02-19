@@ -10,6 +10,10 @@
   }
 }
 
+#gallery {
+  margin: 40px auto;
+}
+
 .sliding-img {
   overflow: hidden;
   flex-wrap: nowrap;
@@ -34,4 +38,31 @@
   
 // Tablet Size
 @media screen and (min-width: 768px) {
+  #gallery {
+    margin: 120px auto;
+  }
+
+  .img-slide {
+  
+    img {
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #gallery {
+    margin: 180px auto;
+  }
+
+  .img-slide {
+  
+    img {
+        width: 450px;
+        height: 450px;
+        padding: 20px;
+    }
+  }
 }
