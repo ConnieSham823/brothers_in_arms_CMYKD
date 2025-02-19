@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as v;
 
 #history-hero {
-    margin-bottom: 100px;
+    margin: 128px auto;
 }
 
 #history-nav {
@@ -60,30 +60,40 @@
     overflow: hidden;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
 }
 
 .history-line-1 {
     position: absolute;
     z-index: 1;
-    left: 6.75%;
-    top: 10%;
-    overflow: hidden;
+    left: clamp(24px, 6.5vw, 100px);
+    top: 40px;
+
+    width: 2px;
+    height: 100%;
+
+    border-left: 2px dashed v.$grey;
 }
 
 .history-line {
     position: absolute;
     z-index: 1;
-    left: 6.75%;
-    top: -10%;
-    overflow: hidden;
+    left: clamp(24px, 6.5vw, 100px);
+    width: 2px;
+    height: 100%;
+
+    border-left: 2px dashed v.$grey;
 }
 
 .history-line-end {
     position: absolute;
     z-index: 1;
-    left: 6.75%;
-    top: -440%;
-    overflow: hidden;
+    left: clamp(24px, 6.5vw, 100px);
+
+    width: 2px;
+    height: 40px;
+
+    border-left: 2px dashed v.$grey;
 }
 
 .history-circle {
@@ -99,8 +109,53 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 24px 24px 24px 56px;
+    padding: 32px 24px 24px 56px;
     gap: 20px;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    span {
+        display: block;
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.history-detail-rev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 32px 24px 24px 56px;
+    gap: 20px;
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    span {
+        display: block;
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
 }
 
 // Victoria Crosses
@@ -148,5 +203,248 @@
     }
     to {
       transform: translateX(-100%);
+    }
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    #history-hero {
+        margin: 200px auto;
+    }
+
+    #history-nav {
+    
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            #victoria {
+                white-space: nowrap;
+            }
+    
+            #letters {
+                white-space: nowrap;
+            }
+    
+            li {
+                list-style: none;
+                padding: 0 80px;
+                text-align: center;
+    
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .history-highlight {
+        position: relative;
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    
+    .history-line-1 {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 40px;
+        margin-left: 7.5px;
+    
+        width: 2px;
+        height: 100%;
+    
+        border-left: 2px dashed v.$grey;
+    }
+    
+    .history-line {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        margin-left: 7.5px;
+    
+        border-left: 2px dashed v.$grey;
+    }
+    
+    .history-line-end {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        margin-left: 7.5px;
+    
+        width: 2px;
+        height: 40px;
+    
+        border-left: 2px dashed v.$grey;
+    }
+    
+    .history-circle {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+    }
+    
+    .history-detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+    
+        padding: 32px 24px 24px 56px;
+        gap: 40px;
+    
+        img {
+            width: 100%;
+            height: 300px;
+            padding-right: 20px;
+            object-fit: cover;
+        }
+
+        span {
+            display: block;
+        }
+        
+        h3 {
+            margin-bottom: 15px;
+        }
+    
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .history-detail-rev {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+        direction: rtl;
+    
+        padding: 32px 24px 24px 56px;
+        gap: 40px;
+
+        .container {
+            margin-right: 12px;
+        }
+    
+        img {
+            width: 100%;
+            height: 300px;
+            padding-right: 20px;
+            object-fit: cover;
+        }
+
+        span {
+            display: block;
+        }
+        
+        h3 {
+            margin-bottom: 15px;
+        }
+    
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+// Desktop Size
+@media screen and (min-width: 1200px) {
+    #history-hero {
+        margin: 300px auto;
+    }
+
+    #history-nav {
+    
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            #victoria {
+                white-space: nowrap;
+            }
+    
+            #letters {
+                white-space: nowrap;
+            }
+    
+            li {
+                list-style: none;
+                padding: 0 180px;
+                text-align: center;
+    
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .history-detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+    
+        padding: 32px 24px 24px 56px;
+        gap: 40px;
+    
+        img {
+            width: 100%;
+            height: 400px;
+            padding-right: 20px;
+            object-fit: cover;
+        }
+
+        span {
+            display: block;
+        }
+        
+        h3 {
+            margin-bottom: 20px;
+        }
+    
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .history-detail-rev {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+        direction: rtl;
+    
+        padding: 32px 24px 24px 56px;
+        gap: 40px;
+
+        .container {
+            margin-right: 12px;
+        }
+    
+        img {
+            width: 100%;
+            height: 400px;
+            padding-right: 20px;
+            object-fit: cover;
+        }
+
+        span {
+            display: block;
+        }
+        
+        h3 {
+            margin-bottom: 20px;
+        }
+    
+        p {
+            margin-bottom: 15px;
+        }
     }
 }

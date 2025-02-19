@@ -54,8 +54,24 @@
     }
 }
 
+// Latest Blogs
+#latest-blogs {
+    .carousel {
+        .carousel-item {
+            display: flex;
+            flex-direction: row;
+
+            .container {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
 #social-media {
-    background-color: v.$black;
+    background-color: v.$green;
     margin: 0px auto;
     
     h2 {
@@ -68,6 +84,10 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
+
+            li {
+                list-style: none;
+            }
         }
     }
 
@@ -79,6 +99,7 @@
 }
 
 #join-us {
+    margin-top: 80px;
     padding: 24px;
 
     img {
@@ -92,7 +113,32 @@
     #hero {
         margin-top: 200px;
         margin-bottom: 200px;
+
+        #img-1 {
+            width: 250px;
+            top: -200px;
+            right: -5%;
+        }
+    
+        #img-2 {
+            width: 200px;
+            top: -170px;
+            left: 10%;
+        }
+    
+        #img-3 {
+            width: 250px;
+            bottom: -150px;
+            left: -5%;
+        }
+    
+        #img-4 {
+            width: 220px;
+            bottom: -100px;
+            right: -5%;
+        }
     }
+
     #intro {
         width: 100%;
 
@@ -103,7 +149,6 @@
             position: relative;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 40px;
 
             img {
                 width: 50%;
@@ -113,74 +158,37 @@
 
             .container-1 {
                 width: 50%;
-                margin-left: 20px;
+                padding: 48px;
             }
         }
     }
 
-    #history {
-        width: 100%;
+    // Abt Park
+    #abt-park {
 
         .container {
             display: flex;
             flex-direction: row-reverse;
             width: 100%;
             position: relative;
-            justify-content: start;
-            align-items: start;
-            padding-top: 80px;
-            padding-bottom: 80px;
-            margin: 80px 0;
-        }
+            justify-content: space-between;
+            align-items: center;
 
-        img {
-            width: 40%;
-            height: auto;
-            object-fit: cover;
-            z-index: 1;
-        }
+            img {
+                width: 50%;
+                object-fit: cover;
+                z-index: -10;
+            }
 
-        .container-1 {
-            z-index: 5;
-            margin-right: 10px;
-        }
-
-        .history-detail {
-            width: 40%;
-        }
-
-        .year {
-            width: 15%;
-        }
-    }
-
-    #letters {
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .card-letter {
-            position: absolute;
-        }
-
-        #letter-1 {
-            width: clamp(200px, 50%, 500px);
-            top: 10%;
-            left: 5%;
-        }
-
-        #letter-2 {
-            width: clamp(200px, 50%, 500px);
-            bottom: 10%;
-            right: 5%;
+            .container-1 {
+                width: 50%;
+                padding: 48px;
+            }
         }
     }
 
     #testimonies {
-        padding: 40px;
-        margin-top: 120px;
-        margin-bottom: 80px;
+        padding: 60px;
     }
 
     #map {
@@ -192,102 +200,84 @@
         margin-top: 120px;
         margin-bottom: 80px;
     }
+
+    // Latest Blogs
+    #latest-blogs {
+        .carousel {
+            .carousel-item {
+                display: flex;
+                flex-direction: row;
+
+                .container {
+                    padding: 24px;
+
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    #social-media {
+        background-color: v.$green;
+        margin: 0px auto;
+        padding-bottom: 80px;
+    }
 }
 
 // Laptop Size
 @media screen and (min-width: 1200px) {
-    #intro {
-        width: 100%;
+    #hero {
+        margin-top: 300px;
+        margin-bottom: 300px;
 
-        .container {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            position: relative;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-bottom: 40px;
-
-            img {
-                width: 50%;
-                object-fit: cover;
-                max-width: 500px;
-                z-index: -10;
-            }
-
-            .container-1 {
-                width: 50%;
-                margin-left: 20px;
-            }
+        #img-1 {
+            width: 250px;
+            top: -200px;
+            right: 10%;
         }
-    }
-
-    #history {
-        width: 100%;
-
-        .container {
-            display: flex;
-            flex-direction: row-reverse;
-            width: 100%;
-            position: relative;
-            justify-content: start;
-            align-items: start;
-            padding-top: 80px;
-            padding-bottom: 80px;
-            margin: 80px 0;
+    
+        #img-2 {
+            width: 200px;
+            top: -170px;
+            left: 10%;
         }
-
-        img {
-            position: absolute;
-            right: 0;
-            bottom: 20%;
-            width: clamp(200px, 50%, 500px);
-            height: clamp(400px, 50%, 400px);
-            object-fit: cover;
-            max-width: 500px;
-            z-index: 1;
-        }
-
-        .container-1 {
-            z-index: 5;
-        }
-
-        .history-detail {
-            margin-right: 30%;
-        }
-    }
-
-    #letters {
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .card-letter {
-            position: absolute;
-        }
-
-        #letter-1 {
-            width: clamp(200px, 50%, 500px);
-            top: 10%;
+    
+        #img-3 {
+            width: 250px;
+            bottom: -150px;
             left: 5%;
         }
-
-        #letter-2 {
-            width: clamp(200px, 50%, 500px);
-            bottom: 10%;
+    
+        #img-4 {
+            width: 220px;
+            bottom: -100px;
             right: 5%;
         }
     }
 
-    #testimonies {
-        padding: 40px;
-        margin-top: 160px;
-        margin-bottom: 100px;
+    // Latest Blogs
+    #latest-blogs {
+        .carousel {
+            .carousel-item {
+                display: flex;
+                flex-direction: row;
+
+                .container {
+                    padding: 24px;
+
+                    img {
+                        height: 600px;
+                    }
+                }
+            }
+        }
     }
 
-    #map {
-        padding: 120px 200px 200px 200px;
+    #testimonies {
+        padding: 200px;
+        margin-bottom: 100px;
     }
 
     #join-us {

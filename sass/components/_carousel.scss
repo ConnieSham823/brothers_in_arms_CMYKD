@@ -136,3 +136,59 @@
     
 }
 
+// Tablet Size
+@media screen and (min-width: 768px) {
+    .socmed-carousel {
+        position: relative;
+        width: 100%;
+    
+        .carousel-item-socmed {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            gap: 24px;
+    
+            .slide-socmed {
+                flex: none;
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    }
+
+    // Socmed Pagination
+    .socmed-pagination {
+        display: none;        
+    }
+}
+
+// Laptop Size
+@media screen and (min-width: 1200px) {
+    .socmed-carousel {
+        position: relative;
+        width: 100%;
+    
+        .carousel-item-socmed {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            gap: 24px;
+    
+            .slide-socmed {
+                flex: none;
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    }
+
+    // Socmed Pagination
+    .socmed-pagination {
+        display: none;        
+    }
+}
+
