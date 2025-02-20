@@ -54,22 +54,6 @@
     }
 }
 
-// Latest Blogs
-#latest-blogs {
-    .carousel {
-        .carousel-item {
-            display: flex;
-            flex-direction: row;
-
-            .container {
-                img {
-                    height: 300px;
-                }
-            }
-        }
-    }
-}
-
 #social-media {
     background-color: v.$green;
     margin: 0px auto;
@@ -201,28 +185,23 @@
         margin-bottom: 80px;
     }
 
-    // Latest Blogs
-    #latest-blogs {
-        .carousel {
-            .carousel-item {
-                display: flex;
-                flex-direction: row;
-
-                .container {
-                    padding: 24px;
-
-                    img {
-                        height: 400px;
-                    }
-                }
-            }
-        }
-    }
-
     #social-media {
         background-color: v.$green;
         margin: 0px auto;
         padding-bottom: 80px;
+
+        .carousel-cont {
+            .carousel-item-gen {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 48px;
+                gap: 24px;
+            }
+
+            .carousel-pagination {
+                display: none;
+            }
+        }
     }
 }
 
@@ -257,24 +236,6 @@
         }
     }
 
-    // Latest Blogs
-    #latest-blogs {
-        .carousel {
-            .carousel-item {
-                display: flex;
-                flex-direction: row;
-
-                .container {
-                    padding: 24px;
-
-                    img {
-                        height: 600px;
-                    }
-                }
-            }
-        }
-    }
-
     #testimonies {
         padding: 200px;
         margin-bottom: 100px;
@@ -285,4 +246,6 @@
         margin-top: 200px;
         margin-bottom: 120px;
     }
+
+    
 }

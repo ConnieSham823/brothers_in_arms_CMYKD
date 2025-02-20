@@ -1,5 +1,15 @@
 @use "../abstracts/variables" as v;
 
+#sponsorship {
+    background-color: v.$green;
+    
+    .container-1 {
+        h2, h3, p {
+            color: v.$white;
+        }
+    }
+}
+
 // FaQ Style
 .faq-container {
     max-width: 600px;
@@ -15,7 +25,7 @@
         width: 100%;
         padding: 12px 16px;
         color: v.$black;
-        background-color: rgb(243, 243, 243);
+        background-color: #fff3e5;
         text-align: left;
         border: none;
         outline: none;
@@ -61,6 +71,10 @@
 
 // Tablet Size
 @media screen and (min-width: 768px) {
+    #hero-donor {
+        margin-top: 200px;
+    }
+    
     #contact-detail {
         display: flex;
         flex-direction: row;
@@ -69,6 +83,43 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    #sponsorship {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 48px;
+        padding-right: 48px;
+
+        .container-1:first-child {
+            width: 30%;
+        }
+        
+        .container-1:last-child {
+            width: 70%;
+        }
+    }
+
+    #volunteer {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 48px;
+        padding-right: 48px;
+
+        .container-1:first-child {
+            width: 30%;
+        }
+        
+        .container-1:last-child {
+            width: 70%;
+        }
+    }
+
+    #faq {
+        padding: 96px 0;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -77,5 +128,33 @@
             width: 800px;
         }
         
+    }
+
+    #sponsorship {
+        padding: 144px 200px 144px 200px;
+
+        .container-1:first-child {
+            width: 20%;
+        }
+        
+        .container-1:last-child {
+            width: 80%;
+        }
+    }
+
+    #volunteer {
+        padding: 144px 200px 144px 200px;
+
+        .container-1:first-child {
+            width: 20%;
+        }
+        
+        .container-1:last-child {
+            width: 80%;
+        }
+    }
+
+    #faq {
+        padding: 144px 0;
     }
 }

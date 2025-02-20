@@ -1,53 +1,21 @@
 @use "../abstracts/variables" as v;
 
-// Tablet Size
-@media screen and (min-width: 768px) {
-    #letters {
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+#letters-list {
+    width: 100%;
+    overflow: hidden;
+}
 
-        .card-letter {
-            position: absolute;
-        }
-
-        #letter-1 {
-            width: clamp(200px, 50%, 500px);
-            top: 10%;
-            left: 5%;
-        }
-
-        #letter-2 {
-            width: clamp(200px, 50%, 500px);
-            bottom: 10%;
-            right: 5%;
-        }
-    }
+.letter-carousel {
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 
 // Tablet Size
+@media screen and (min-width: 768px) {
+    
+}
+
+// Laptop Size
 @media screen and (min-width: 1200px) {
-    #letters {
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .card-letter {
-            position: absolute;
-        }
-
-        #letter-1 {
-            width: clamp(200px, 50%, 500px);
-            top: 10%;
-            left: 5%;
-        }
-
-        #letter-2 {
-            width: clamp(200px, 50%, 500px);
-            bottom: 10%;
-            right: 5%;
-        }
-    }
+    
 }

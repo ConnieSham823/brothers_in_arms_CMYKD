@@ -1,0 +1,157 @@
+@use "../abstracts/variables" as v;
+
+#about-vc {
+    padding: 24px;
+
+    img {
+        width: 300px;
+    }
+}
+
+#vc-summary {
+    margin-top: 40px;
+
+    #vc-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    
+        .container-1 {
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+
+    #ind-vc {
+        background-color: v.$orange;
+
+        h3 {
+            color: v.$white;
+        }
+
+        p {
+            color: v.$white;
+        }
+    }
+
+    #cad-vc {
+        background-color: v.$red;
+
+        h3 {
+            color: v.$white;
+        }
+
+        p {
+            color: v.$white;
+        }
+    }
+}
+
+#vc-medal-winners {
+    .vc-winner-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 24px;
+        
+        .container-inline {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    #about-vc {
+        padding: 72px;
+    
+        img {
+            margin-bottom: 12px;
+            width: 400px;
+        }
+    }
+
+    #vc-summary {
+        margin-top: 80px;
+    
+        #ind-vc {
+            padding: 48px;
+        }
+    
+        #cad-vc {
+            padding: 48px;
+        }
+    }
+
+    #vc-medal-winners {
+        .vc-winner-cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 48px;
+            
+            .container-inline {
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+// Tablet Size
+@media screen and (min-width: 1200px) {
+    #about-vc {
+        padding: 256px;
+    
+        img {
+            margin-bottom: 12px;
+            width: 400px;
+        }
+    }
+
+    #vc-summary {
+        margin-top: 80px;
+    
+        #ind-vc {
+            padding: 48px;
+        }
+    
+        #cad-vc {
+            padding: 48px;
+        }
+    }
+
+    #vc-medal-winners {
+        .vc-winner-cont {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            padding: 48px;
+            
+            .container-inline {
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
