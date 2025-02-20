@@ -83,13 +83,126 @@ function userScroll() {
 
 window.addEventListener("scroll", userScroll);
 
+// General Carousel
+const carousels = document.querySelectorAll(".carousel-cont");
+
+function slideContent(carousel, index) {
+    const carouselItem = carousel.querySelector(".carousel-item-gen");
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    const bullets = carousel.querySelectorAll(".carousel-bullet");
+
+    if (!carouselItem || slides.length === 0) return;
+
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    console.log("Slide Width:", slideWidth);
+
+    gsap.to(carouselItem, {
+        x: -index * slideWidth - index * 48,
+        duration: 0.8,
+        ease: "power2.inOut",
+        onComplete: () => {
+            const newWidth = slides[0].getBoundingClientRect().width;
+            console.log("After Animation - Slide Width:", newWidth);
+        }
+    });
+
+    bullets.forEach((bullet, i) => {
+        bullet.classList.toggle("active", i === index);
+    });
+
+    carousel.dataset.currentIndex = index;
+}
+
+function slideContentTwo(carousel, index) {
+    const carouselItemTwo = carousel.querySelector(".carousel-item-gen-two");
+    const slidesTwo = carousel.querySelectorAll(".carousel-slide-two");
+    const bulletsTwo = carousel.querySelectorAll(".carousel-bullet-two");
+
+    if (!carouselItemTwo || slidesTwo.length === 0) return;
+
+    const slideWidth = slidesTwo[0].getBoundingClientRect().width;
+    console.log("Slide Width:", slideWidth);
+
+    gsap.to(carouselItemTwo, {
+        x: -index * slideWidth - index * 48,
+        duration: 0.8,
+        ease: "power2.inOut",
+        onComplete: () => {
+            const newWidth = slidesTwo[0].getBoundingClientRect().width;
+            console.log("After Animation - Slide Width:", newWidth);
+        }
+    });
+
+    bulletsTwo.forEach((bullet, i) => {
+        bullet.classList.toggle("active", i === index);
+    });
+
+    carousel.dataset.currentIndex = index;
+}
+
+function bulletClick(e) {
+    const bullet = e.target;
+    const carousel = bullet.closest(".carousel-cont");
+    const index = parseInt(bullet.getAttribute("data-index"));
+    slideContent(carousel, index);
+}
+
+function bulletClickTwo(e) {
+    const bullet = e.target;
+    const carousel = bullet.closest(".carousel-cont");
+    const index = parseInt(bullet.getAttribute("data-index"));
+    slideContentTwo(carousel, index);
+}
+
+function touchStart(e) {
+    const carousel = e.currentTarget;
+    carousel.dataset.startX = e.touches[0].clientX;
+}
+
+function swipeMove(e) {
+    e.preventDefault(); 
+    const carousel = e.currentTarget;
+    carousel.dataset.endX = e.touches[0].clientX;
+}
+
+function swipeEnd(e) {
+    const carousel = e.currentTarget;
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    let currentIndex = parseInt(carousel.dataset.currentIndex || 0);
+    let startX = parseFloat(carousel.dataset.startX || 0);
+    let endX = parseFloat(carousel.dataset.endX || startX);
+
+    if (startX - endX > 50 && currentIndex < slides.length - 1) {
+        slideContent(carousel, currentIndex + 1);
+    } else if (endX - startX > 50 && currentIndex > 0) {
+        slideContent(carousel, currentIndex - 1);
+    }
+}
+
+carousels.forEach((carousel) => {
+    carousel.dataset.currentIndex = 0;
+
+    const bullets = carousel.querySelectorAll(".carousel-bullet");
+    const bulletsTwo = carousel.querySelectorAll(".carousel-bullet-two");
+    bullets.forEach((bullet) => bullet.addEventListener("click", bulletClick));
+    bulletsTwo.forEach((bulletTwo) => bulletTwo.addEventListener("click", bulletClickTwo));
+
+    carousel.addEventListener("touchstart", touchStart, false);
+    carousel.addEventListener("touchmove", swipeMove, false);
+    carousel.addEventListener("touchend", swipeEnd, false);
+
+    slideContent(carousel, 0);
+});
+
+// AUTO-RESIZE HANDLING
+window.addEventListener("resize", () => {
+    carousels.forEach((carousel) => {
+        let currentIndex = parseInt(carousel.dataset.currentIndex || 0);
+        slideContent(carousel, currentIndex);
+    });
+});
+
 // Carousel Blog Bullet Pagination
-const carouselItem = document.querySelector(".carousel-item");
-const bullets = document.querySelectorAll(".bullet");
-const slides = document.querySelectorAll(".slide");
-const carouselItemSocmed = document.querySelector(".carousel-item-socmed");
-const bulletsSocmed = document.querySelectorAll(".bullet-socmed");
-const slidesSocmed = document.querySelectorAll(".slide-socmed");
 const milestoneItem = document.querySelector(".milestone-item");
 const bulletsPage = document.querySelectorAll(".bullet-page");
 const slidesMilestone = document.querySelectorAll(".slide-milestone");
@@ -97,70 +210,27 @@ let currentIndex = 0;
 let startingX = 0; 
 
 function slide(index, carouselType) {
-    if (carouselType === "blog") {
-        const slideWidth = slides[0].offsetWidth;
-
-        gsap.to(carouselItem, {
-            x: -index * slideWidth,
-            duration: 0.8,
-            ease: "power2.inOut",
-        });
-
-        // Active Bullet Blog Indicator
-        bullets.forEach((bullet, i) => {
-            bullet.classList.toggle("active", i === index);
-        });
-    } else if (carouselType === "socmed") {
-        const slideWidthSocmed = slidesSocmed[0].offsetWidth;
-
-        gsap.to(carouselItemSocmed, {
-            x: -index * slideWidthSocmed - index * 48,
-            duration: 0.8,
-            ease: "power2.inOut",
-        });
-
-        bulletsSocmed.forEach((bulletS, i) => {
-            bulletS.classList.toggle("active", i === index);
-        });
-    } else if (carouselType === "milestone") {
+    if (carouselType === "milestone") {
         const slideWidthMilestone = slidesMilestone[0].offsetWidth;
 
         gsap.to(milestoneItem, {
-            x: -index * slideWidthMilestone - index * 48,
-            duration: 0.8,
-            ease: "power2.inOut",
+             x: -index * slideWidthMilestone - index * 48,
+             duration: 0.8,
+             ease: "power2.inOut",
         });
 
         bulletsPage.forEach((bulletP, i) => {
-            bulletP.classList.toggle("active", i === index);
-        });
+             bulletP.classList.toggle("active", i === index);
+         });
     }
   
     currentIndex = index;
-}
-
-function bulletClick(e) {
-    const index = parseInt(e.target.getAttribute("data-index"));
-    slide(index, "blog");
-}
-
-function bulletClickSocmed(e) {
-    const index = parseInt(e.target.getAttribute("data-index"));
-    slide(index, "socmed");
 }
 
 function bulletClickMilestone(e) {
     const index = parseInt(e.target.getAttribute("data-index"));
     slide(index, "milestone");
 }
-
-bullets.forEach((bullet) => {
-    bullet.addEventListener("click", bulletClick);
-});
-
-bulletsSocmed.forEach((bulletS) => {
-    bulletS.addEventListener("click", bulletClickSocmed);
-});
 
 bulletsPage.forEach((bulletP) => {
     bulletP.addEventListener("click", bulletClickMilestone);
@@ -169,7 +239,7 @@ bulletsPage.forEach((bulletP) => {
 // Start with first slide active
 slide(currentIndex);
 
-// Swipe variables
+// // Swipe variables
 let startX = 0;
 let endX = 0;
 
@@ -177,32 +247,6 @@ let endX = 0;
 function touchStart(event) {
     startX = event.touches[0].clientX;
 }
-
-// Detect Swipe Event
-function swipeMove(event) {
-    endX = event.touches[0].clientX;
-}
-
-// Swipe End
-function swipeEnd() {
-    if (startX - endX > 50) {
-        // Swiped left -> go to next slide
-        if (currentIndex < slides.length - 1) {
-            slide(currentIndex + 1);
-        }
-    } else if (endX - startX > 50) {
-        // Swiped right -> go to previous slide
-        if (currentIndex > 0) {
-            slide(currentIndex - 1);
-        }
-    }
-}
-
-// Swipe Event Listeners -> Detect touch events
-carouselItem.addEventListener("touchstart", touchStart, false);
-carouselItem.addEventListener("touchmove", swipeMove, false);
-carouselItem.addEventListener("touchend", swipeEnd, false);
-
 
 // FaQ Function
 const faqQuest = document.querySelectorAll('.faq-question');
