@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Brothers in Arms</title>
 
-    <!-- JS -->
-    <!-- GSAP Library -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
+    <!-- GSAP Library -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
     <!-- Main JS -->
-    <script defer src="./js/main.js"></script>
+    <script defer type="module" src="./js/contact.js"></script>
   </head>
 
   <body>
@@ -60,7 +60,7 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
-      <section id="hero-donor" class="section-white orient-center">
+      <section id="hero-donor" class="section-white orient-center fade-in">
         <h2 class="display text-center">Contact Us</h2>
         <div class="orient-left">
           <!-- Form -->
@@ -90,7 +90,7 @@
       </section>
 
       <!-- Contact Info -->
-      <section id="contact-info" class="section-white">
+      <section id="contact-info" class="section-white fade-in">
         <h2 class="hidden">Contact Information</h2>
 
         <div id="contact-detail">
@@ -114,7 +114,7 @@
       </section>
 
       <!-- Sponsorship -->
-      <section id="sponsorship" class="section-grey orient-left">
+      <section id="sponsorship" class="section-grey orient-left fade-in">
         <div class="container-1">
           <h2 class="header text-center">Sponsorship</h2>
           <a href="#" class="ter-btn">Fill a Form</a>
@@ -127,7 +127,7 @@
       </section>
 
       <!-- Volunteer -->
-      <section id="volunteer" class="section-white orient-left">
+      <section id="volunteer" class="section-white orient-left fade-in">
         <div class="container-1">
           <h2 class="header text-center">Volunteer</h2>
           <a href="#" class="sec-btn">Fill a Form</a>
@@ -140,7 +140,7 @@
       </section>
 
       <!-- FaQ -->
-      <section id="faq" class="section-grey orient-center">
+      <section id="faq" class="section-grey orient-center fade-in">
         <div class="container-1 orient-center">
           <h2 class="header text-center">FaQ</h2>
           <p class="body-text text-center">Confused? Try have a look at out Frequently Asked Questions.</p>
@@ -187,7 +187,7 @@
 
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
-      <section id="join-us" class="section-white orient-center">
+      <section id="join-us" class="section-white orient-center fade-in">
         <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
         <h2 class="display text-center">Join Us to Commemorate</h2>
 

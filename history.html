@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Brothers in Arms</title>
 
-    <!-- JS -->
-    <!-- GSAP Library -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
+    <!-- GSAP Library -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
     <!-- Main JS -->
-    <script defer src="./js/main.js"></script>
+    <script defer type="module" src="./js/history.js"></script>
   </head>
 
   <body>
@@ -60,7 +60,7 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
-      <section id="history-hero" class="section-white orient-center">
+      <section id="history-hero" class="section-white orient-center fade-in">
         <h2 class="hidden">History</h2>
         
         <nav id="history-nav">
@@ -82,14 +82,14 @@
         <h2 class="hidden">History Highlight 1</h2>
 
         <div class="history-detail">
-          <img src="./images/placeholder-img.jpg" alt="Image of War">
+          <img class="fade-in" src="./images/placeholder-img.jpg" alt="Image of War">
 
           <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
             <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
           </svg>
 
-          <div class="container">
+          <div class="container fade-in">
             <h3 class="header">1914</h3>
             <p class="sub-head">The War Begins and India Joins the Fight</p>
             <p class="body-text"><span class="bold">August 4, 1914</span>
@@ -103,14 +103,14 @@
         </div>
 
         <div class="history-detail">
-          <img src="./images/placeholder-img.jpg" alt="Image of War">
+          <img class="fade-in" src="./images/placeholder-img.jpg" alt="Image of War">
 
           <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
             <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
           </svg>
 
-          <div class="container">
+          <div class="container fade-in">
             <p class="sub-head">The Indian Army Saves the British Expeditionary Force (BEF)</p>
             <p class="body-text"><span class="bold">1914</span>
               The Indian Army Saves the British Expeditionary Force (BEF)
@@ -133,14 +133,14 @@
         <h2 class="hidden">History Highlight 2</h2>
 
         <div class="history-detail-rev">
-          <img src="./images/placeholder-img.jpg" alt="Image of War">
+          <img class="fade-in" src="./images/placeholder-img.jpg" alt="Image of War">
 
           <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
             <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
           </svg>
 
-          <div class="container">
+          <div class="container fade-in">
             <h3 class="header">1915</h3>
             <p class="sub-head">The Arrival of Canadian Troops and Joint Battles Begin</p>
             <p class="body-text"><span class="bold">January 14, 1915</span>
@@ -169,14 +169,14 @@
         <h2 class="hidden">History Highlight 3</h2>
 
         <div class="history-detail">
-          <img src="./images/placeholder-img.jpg" alt="Image of War">
+          <img class="fade-in" src="./images/placeholder-img.jpg" alt="Image of War">
 
           <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
             <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
           </svg>
 
-          <div class="container">
+          <div class="container fade-in">
             <h3 class="header">1916 - 1917</h3>
             <p class="sub-head">TJoint Efforts at the Somme and Vimy Ridge</p>
             <p class="body-text"><span class="bold">1916</span>
@@ -200,14 +200,14 @@
         <h2 class="hidden">History Highlight 4</h2>
 
         <div class="history-detail-rev">
-          <img src="./images/placeholder-img.jpg" alt="Image of War">
+          <img class="fade-in" src="./images/placeholder-img.jpg" alt="Image of War">
 
           <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
             <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
             <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
           </svg>
 
-          <div class="container">
+          <div class="container fade-in">
             <h3 class="header">1918</h3>
             <p class="sub-head">The Final Year &amp; Shared Sacrifice</p>
             <p class="body-text"><span class="bold">1918</span>
@@ -223,7 +223,7 @@
 
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
-      <section id="join-us" class="section-white orient-center">
+      <section id="join-us" class="section-white orient-center fade-in">
         <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
