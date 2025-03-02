@@ -4,6 +4,7 @@ import { videoPlayer } from "./modules/player.js";
 import { fadeInTransition } from "./modules/fadein.js";
 import { navigationMenu } from "./modules/navigation.js"
 import { generalCarousel } from "./modules/general-carousel.js";
+import { imgZoom } from "./modules/img-zoom.js";
 
 console.log("Homepage JS is Connected");
 
@@ -12,3 +13,4 @@ videoPlayer();
 fadeInTransition();
 navigationMenu();
 generalCarousel();
+imgZoom();
