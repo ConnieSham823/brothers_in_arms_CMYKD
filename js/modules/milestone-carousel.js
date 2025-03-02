@@ -1,4 +1,4 @@
-// Mobile Menu
+// Milestoen Carousel
 
 export function milestoneCarousel() {
     const milestoneItem = document.querySelector(".milestone-item");
