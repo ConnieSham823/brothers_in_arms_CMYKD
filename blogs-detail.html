@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Brothers in Arms</title>
 
-    <!-- JS -->
-    <!-- GSAP Library -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
+    <!-- GSAP Library -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
     <!-- Main JS -->
-    <script defer src="./js/main.js"></script>
+    <script defer type="module" src="./js/blogs-detail.js"></script>
   </head>
 
   <body>
@@ -60,7 +60,7 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Blog -->
-      <section id="blog-detail" class="section-white orient-center">
+      <section id="blog-detail" class="section-white orient-center fade-in">
         <h2 class="hidden">Blog Detail</h2>
 
         <div class="container slide">
@@ -120,7 +120,7 @@
       </section>
 
       <!-- Comment -->
-      <section id="comment" class="section-grey">
+      <section id="comment" class="section-grey fade-in">
         <h2 class="hidden">Blog Comments</h2>
         <form class="comment-form">
           <label class="hidden" for="ccomment-message">Comment Message</label>
@@ -169,7 +169,7 @@
 
       
       <!-- Other Blog -->
-      <section id="other-blogs" class="section-grey">
+      <section id="other-blogs" class="section-grey fade-in">
         <div class="container-inline">
           <h2 class="header">Other Blogs</h2>
         </div>
@@ -226,7 +226,7 @@
       
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
-      <section id="join-us" class="section-white orient-center">
+      <section id="join-us" class="section-white orient-center fade-in">
         <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
