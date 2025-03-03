@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { fadeInTransition } from "./modules/fadein.js";
 import { navigationMenu } from "./modules/navigation.js"
 import { generalCarousel } from "./modules/general-carousel.js";
+import { lightBox } from "./modules/lightbox.js";
 
 console.log("Homepage JS is Connected");
 
@@ -10,3 +11,4 @@ console.log("Homepage JS is Connected");
 fadeInTransition();
 navigationMenu();
 generalCarousel();
+lightBox();
