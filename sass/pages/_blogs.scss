@@ -1,13 +1,5 @@
 @use "../abstracts/variables" as v;
 
-#latest-blogs {
-    .container-inline {
-        justify-content: space-between;
-        padding: 24px;
-        align-items: center;
-    }
-}
-
 #other-blogs {
     .container-inline {
         justify-content: space-between;
@@ -92,6 +84,14 @@
 
 // Latest Blogs
 #latest-blogs {
+    padding-top: 0;
+
+    .container-inline {
+        justify-content: space-between;
+        padding: 24px;
+        align-items: center;
+    }
+
     .carousel-cont {
         .carousel-item-gen-two {
             display: flex;
@@ -99,7 +99,7 @@
 
             .container {
                 img {
-                    height: 300px;
+                    height: 200px;
                 }
             }
         }
@@ -185,6 +185,8 @@
 @media screen and (min-width: 1200px) {
     // Latest Blogs
     #latest-blogs {
+        padding: 0 96px;
+
         .carousel-cont {
             
             .carousel-item-gen-two {

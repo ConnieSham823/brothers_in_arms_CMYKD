@@ -2,12 +2,15 @@
 
 // Mobile Style
 #hero {
-    margin: 128px auto;
+    padding: 172px 24px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: url(../images/map-texture.svg);
+    background-size: cover;
 
     h2 {
         margin-bottom: 0;
@@ -18,40 +21,55 @@
     }
 
     #img-1 {
-        width: 150px;
-        top: -100px;
-        right: -5%;
+        width: 100px;
+        top: 10px;
+        right: 5%;
     }
 
     #img-2 {
         width: 100px;
-        top: -70px;
+        top: 50px;
         left: 10%;
     }
 
     #img-3 {
-        width: 150px;
-        bottom: -100px;
-        left: -5%;
+        width: 120px;
+        bottom: -20px;
+        left: 5%;
     }
 
     #img-4 {
         width: 120px;
-        bottom: -100px;
+        bottom: -60px;
         right: -5%;
     }
+}
 
+#hero-video {
+    padding: 24px;
+}
 
+#intro {
+    margin: 24px auto;
+
+    img {
+        height: 200px;
+    }
 }
 
 #abt-park {
     display: flex;
+    margin: 24px auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     .arrow-control {
         gap: 40px;
+    }
+
+    img {
+        height: 200px;
     }
 }
 
@@ -96,36 +114,42 @@
 // Tablet Size
 @media screen and (min-width: 768px) {
     #hero {
-        margin-top: 200px;
-        margin-bottom: 200px;
+        padding: 256px 24px;
+        margin-top: 0;
 
         #img-1 {
             width: 250px;
-            top: -200px;
+            top: 20px;
             right: -5%;
         }
     
         #img-2 {
             width: 200px;
-            top: -170px;
+            top: 20px;
             left: 10%;
         }
     
         #img-3 {
             width: 250px;
-            bottom: -150px;
+            bottom: 20px;
             left: -5%;
         }
     
         #img-4 {
             width: 220px;
-            bottom: -100px;
+            bottom: -40px;
             right: -5%;
         }
     }
 
+    #hero-video {
+        padding: 48px;
+    }
+
     #intro {
         width: 100%;
+        margin-bottom: 0;
+        padding: 0 48px;
 
         .container {
             display: flex;
@@ -136,6 +160,7 @@
             align-items: center;
 
             img {
+                height: 500px;
                 width: 50%;
                 object-fit: cover;
                 z-index: -10;
@@ -150,6 +175,9 @@
 
     // Abt Park
     #abt-park {
+        margin-top: 0;
+        margin-bottom: 96px;
+        padding: 0 48px;
 
         .container {
             display: flex;
@@ -160,6 +188,7 @@
             align-items: center;
 
             img {
+                height: 500px;
                 width: 50%;
                 object-fit: cover;
                 z-index: -10;
@@ -190,6 +219,8 @@
         background-color: v.$green;
         margin: 0px auto;
         padding-bottom: 80px;
+        padding-left: 24px;
+        padding-right: 24px;
 
         .carousel-cont {
             .carousel-item-gen {
@@ -209,37 +240,101 @@
 // Laptop Size
 @media screen and (min-width: 1200px) {
     #hero {
-        margin-top: 300px;
-        margin-bottom: 300px;
+        padding: 356px 24px;
+        margin-top: 0;
 
         #img-1 {
             width: 250px;
-            top: -200px;
+            top: 200px;
             right: 10%;
         }
     
         #img-2 {
             width: 200px;
-            top: -170px;
+            top: 100px;
             left: 10%;
         }
     
         #img-3 {
             width: 250px;
-            bottom: -150px;
-            left: 5%;
+            bottom: 50px;
+            left: 10%;
         }
     
         #img-4 {
             width: 220px;
-            bottom: -100px;
+            bottom: 50px;
             right: 5%;
+        }
+    }
+
+    #hero-video {
+        padding: 48px 144px;
+    }
+
+    #intro {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0 144px;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                height: 500px;
+                width: 50%;
+                object-fit: cover;
+                z-index: -10;
+            }
+
+            .container-1 {
+                width: 50%;
+                padding: 48px;
+            }
+        }
+    }
+
+    // Abt Park
+    #abt-park {
+        margin-top: 0;
+        margin-bottom: 144px;
+        padding: 0 144px;
+
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                height: 500px;
+                width: 50%;
+                object-fit: cover;
+                z-index: -10;
+            }
+
+            .container-1 {
+                width: 50%;
+                padding: 48px;
+            }
         }
     }
 
     #testimonies {
         padding: 200px;
         margin-bottom: 100px;
+    }
+
+    #social-media {
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
     #join-us {
