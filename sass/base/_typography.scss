@@ -38,6 +38,14 @@
     font-size: v.$header;
 }
 
+.handwrite {
+    font-family: v.$handwriting;
+    font-size: v.$subhead;
+    color: v.$black;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+}
+
 .caption {
     font-family: v.$body-font;
     font-size: v.$caption;
@@ -55,7 +63,7 @@
     font-size: v.$body;
     font-weight: 400;
     color: v.$darkgrey;
-    line-height: 14px;
+    line-height: 16px;
 }
 
 
@@ -151,6 +159,13 @@
         font-family: v.$quote;
         font-size: v.$m-header;
     }
+
+    .handwrite {
+        font-family: v.$handwriting;
+        font-size: v.$m-subhead;
+        color: v.$black;
+        letter-spacing: 3.2px;
+    }
     
     .caption {
         font-family: v.$body-font;
@@ -210,6 +225,13 @@
     .quote {
         font-family: v.$quote;
         font-size: v.$l-header;
+    }
+
+    .handwrite {
+        font-family: v.$handwriting;
+        font-size: v.$l-subhead;
+        color: v.$black;
+        letter-spacing: 3.2px;
     }
     
     .caption {

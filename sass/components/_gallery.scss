@@ -11,7 +11,9 @@
 }
 
 #gallery {
-  margin: 40px auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 .sliding-img {
@@ -39,7 +41,7 @@
 // Tablet Size
 @media screen and (min-width: 768px) {
   #gallery {
-    margin: 120px auto;
+    margin: 60px auto;
   }
 
   .img-slide {
@@ -54,7 +56,7 @@
 
 @media screen and (min-width: 1200px) {
   #gallery {
-    margin: 180px auto;
+    margin: 80px auto;
   }
 
   .img-slide {

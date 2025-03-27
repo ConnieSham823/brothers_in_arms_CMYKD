@@ -19,3 +19,13 @@
   font-style: normal;
 }
 
+// Handwriting
+@font-face {
+  font-family: "Hargalia";
+  src: url("../fonts/Hargalia.woff2") format("woff2"),
+    url("../fonts/Hargalia.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
