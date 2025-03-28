@@ -28,6 +28,12 @@
         padding: 24px;
         gap: 48px;
 
+        .container-2 {
+            .container-1 {
+                padding-left: 24px;
+            }
+        }
+
         .slide-milestone {
             flex: 0 0 100%;
         }
