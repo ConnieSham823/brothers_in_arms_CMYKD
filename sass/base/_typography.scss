@@ -112,6 +112,10 @@
     color: v.$blue;
 }
 
+.t-white {
+    color: v.$white;
+}
+
 
 // Tablet Size
 @media screen and (min-width: 768px) {
@@ -125,19 +129,17 @@
     .header {
         font-family: v.$header-font;
         font-size: v.$m-header;
-        color: v.$black;
     }
     
     .sub-head {
         font-family: v.$header-font;
         font-size: v.$m-subhead;
-        color: v.$black;
     }
     
     .body-text {
         font-family: v.$body-font;
         font-size: v.$m-body;
-        color: v.$darkgrey;
+        // color: v.$darkgrey;
         line-height: 18px;
     }
 
@@ -164,7 +166,7 @@
         font-family: v.$handwriting;
         font-size: v.$m-subhead;
         color: v.$black;
-        letter-spacing: 3.2px;
+        letter-spacing: 2.2px;
     }
     
     .caption {
@@ -192,19 +194,18 @@
     .header {
         font-family: v.$header-font;
         font-size: v.$l-header;
-        color: v.$black;
+        // color: v.$black;
     }
     
     .sub-head {
         font-family: v.$header-font;
         font-size: v.$l-subhead;
-        color: v.$black;
     }
     
     .body-text {
         font-family: v.$body-font;
         font-size: v.$l-body;
-        color: v.$darkgrey;
+        // color: v.$darkgrey;
         line-height: 20px;
     }
 
@@ -231,7 +232,7 @@
         font-family: v.$handwriting;
         font-size: v.$l-subhead;
         color: v.$black;
-        letter-spacing: 3.2px;
+        letter-spacing: 2.8px;
     }
     
     .caption {
