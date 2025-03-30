@@ -17,7 +17,7 @@ export function lightBox() {
         {
             title: "Khudadad Khan",
             desc: "(129th Baluchis, First Battle of Ypres, October 1914)",
-            img: "./images/khudadad-khan.jpg",
+            img: "./images/khudadad-khan.png",
             achievements: [
                 "Single-handedly manned a machine gun, holding off advancing German forces.",
                 "Survived despite severe injuries and became the first Indian Victoria Cross recipient."
@@ -39,7 +39,7 @@ export function lightBox() {
         {
             title: "Gobind Singh",
             desc: "(28th Light Cavalry, France, 1917)",
-            img: "./images/gobind-singh.jpeg",
+            img: "./images/gobind-singh.png",
             achievements: [
                 "Delivered vital messages under intense enemy fire, ensuring reinforcements arrived.",
                 "Crossed No Man's Land three times while being targeted."
@@ -61,7 +61,7 @@ export function lightBox() {
         {
             title: "Naik Shahamad Khan",
             desc: "(89th Punjabis, Mesopotamia, April 1916)",
-            img: "./images/naik-shahamad.jpg",
+            img: "./images/naik-shahamad.png",
             achievements: [
                 "Defended his post alone, fighting off overwhelming numbers of enemy soldiers."
             ],
@@ -82,7 +82,7 @@ export function lightBox() {
         {
             title: "Karanbahadur Rana",
             desc: "(2nd Battalion, 3rd Queen Alexandra's Gurkha Rifles, 1918)",
-            img: "./images/karanbahadur.jpg",
+            img: "./images/karanbahadur.png",
             achievements: [
                 "Captured key enemy positions by charging into their trenches."
             ],
@@ -103,7 +103,7 @@ export function lightBox() {
         {
             title: "Darwan Singh Negi",
             desc: "(39th Garhwal Rifles, November 1914)",
-            img: "./images/darwan-singh.jpeg",
+            img: "./images/darwan-singh.png",
             achievements: [
                 "Led his men through enemy fire, storming German trenches with bayonets.",
                 "One of the first Indian soldiers to receive the Victoria Cross."
@@ -125,7 +125,7 @@ export function lightBox() {
         {
             title: "Khudadad Khan",
             desc: "(129th Baluchis, First Battle of Ypres, October 1914)",
-            img: "./images/khudadad-khan.jpg",
+            img: "./images/khudadad-khan.png",
             achievements: [
                 "Single-handedly manned a machine gun, holding off advancing German forces.",
                 "Survived despite severe injuries and became the first Indian Victoria Cross recipient."
