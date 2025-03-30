@@ -46,15 +46,14 @@
             </ul>
           </li>
           <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="donor" class="navlink" href="donor.html">Donor</a></li>
           <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
           <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
         </ul>
         <br>
-        <a id="donor-btn-mobile" href="#" class="prim-btn">Be a Donor</a>
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
       </nav>
 
-      <a id="donor-btn-desktop" href="#" class="prim-btn">Be a Donor</a>
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -75,17 +74,47 @@
         </div>
       </section>
 
-      <!-- About Donor -->
-      <section id="about-donor" class="section-grey orient-center fade-in">
-        <!-- Video -->
-        <div id="donor-video">
-          <video controls preload="metadata">
-            <source src="./video/video-1.mp4" type="video/mp4">
-            <!-- <source src="./video/video-placeholder.webm" type="video/webm"> -->
-            <p>Ooops, something went wrong. You may be using an oudated browser or have javascript disabled.</p>
-          </video>
-        </div>
+      <!-- Donor Form -->
+      <section id="be-a-donor" class="section-grey orient-center fade-in">
+        <h2 class="header text-center">Be a Donor</h2>
+        <p class="body-text text-center">Donate however much you want to support the campaign!</p>
 
+        <!-- Donor Form -->
+        <div id="donor-form">
+          <!-- Form -->
+          <form class="container-form orient-center">
+              <div class="container-inline">
+                <label class="hidden" for="first_name">First Name</label>
+                <input name="first_name" type="text" placeholder="First Name" id="first_name">
+
+                <label class="hidden" for="last_name">Last Name</label>
+                <input name="last_name" type="text" placeholder="Last Name" id="last_name">
+              </div>
+
+              <div class="container-inline">
+                <label class="hidden" for="email" >Email</label>
+                <input name="email" type="text" placeholder="Your Email" id="contact-email">
+
+                <label class="hidden" for="phone">Phone Number</label>
+                <input name="phone_number" type="text" placeholder="Your Phone Number" id="phone_number">
+              </div>
+              
+              <label class="hidden" for="orgname">Organization Name</label>
+              <input name="phone_number" type="text" placeholder="Organization Name / Leave it blank to be anonymous" id="org_name">
+
+              <label class="hidden" for="donateamount">Donate Amount</label>
+              <input name="phone_number" type="text" placeholder="Donate Amount" id="donate_amount">
+
+              <label class="hidden" for="contact_message">Message</label>
+              <textarea name="contact_message" id="contact_message" placeholder="Please tell us what concerns you or any questions you need answered."></textarea>
+
+              <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+
+      <!-- About Donor -->
+      <section id="about-donor" class="section-white orient-center fade-in">
         <!-- Content -->
         <div class="container orient-center">
           <div class="container-1 orient-center">
@@ -96,7 +125,7 @@
       </section>
 
       <!-- Donor Info -->
-      <section id="donors" class="section-white fade-in">
+      <section id="donors" class="section-grey fade-in">
         <h2 class="hidden">Top Donors and Donor Packages</h2>
         <!-- Top Donors -->
         <div id="top-donor" class="container orient-center">
@@ -226,7 +255,7 @@
       </section>
 
       <!-- Milestone -->
-      <section id="milestone" class="section-grey fade-in">
+      <section id="milestone" class="section-white fade-in">
         <h2 class="hidden">Milestone</h2>
 
         <!-- Header Milestone -->
@@ -292,45 +321,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Donor Form -->
-      <section id="be-a-donor" class="section-white orient-center fade-in">
-        <h2 class="header text-center">Be a Donor</h2>
-        <p class="body-text text-center">Donate however much you want to support the campaign!</p>
-
-        <!-- Donor Form -->
-        <div id="donor-form">
-          <!-- Form -->
-          <form class="container-form orient-center">
-              <div class="container-inline">
-                <label class="hidden" for="first_name">First Name</label>
-                <input name="first_name" type="text" placeholder="First Name" id="first_name">
-
-                <label class="hidden" for="last_name">Last Name</label>
-                <input name="last_name" type="text" placeholder="Last Name" id="last_name">
-              </div>
-
-              <div class="container-inline">
-                <label class="hidden" for="email" >Email</label>
-                <input name="email" type="text" placeholder="Your Email" id="contact-email">
-
-                <label class="hidden" for="phone">Phone Number</label>
-                <input name="phone_number" type="text" placeholder="Your Phone Number" id="phone_number">
-              </div>
-              
-              <label class="hidden" for="orgname">Organization Name</label>
-              <input name="phone_number" type="text" placeholder="Organization Name / Leave it blank to be anonymous" id="org_name">
-
-              <label class="hidden" for="donateamount">Donate Amount</label>
-              <input name="phone_number" type="text" placeholder="Donate Amount" id="donate_amount">
-
-              <label class="hidden" for="contact_message">Message</label>
-              <textarea name="contact_message" id="contact_message" placeholder="Please tell us what concerns you or any questions you need answered."></textarea>
-
-              <input type="submit" value="Send" class="prim-btn">
-          </form>
         </div>
       </section>
 
@@ -412,18 +402,10 @@
         </div>
       </section>
 
-      <!-- CTA to Support -->
-      <section id="support-cta" class="section-grey orient-center fade-in">
-        <h2 class="hidden">Support CTA</h2>
-        <p class="quote text-center">So many way to support us! just spread our project to the one (or more) you loving!</p>
-
-        <a href="#" class="ter-btn">I'm In!</a>
-      </section>
-
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
       <section id="join-us" class="section-white orient-center fade-in">
-        <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
         <div class="container orient-center">
@@ -446,10 +428,26 @@
           <a href="#" class="prim-btn">Be a Donor</a>
         </div>
       </section>
+
+      
+    
     </main>
 
     <!-- FOOTER -->
     <footer id="footer" class="">
+      <!-- Footer Sitemap -->
+      <nav id="foot-sitemap">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="container-inline">
         <a href="#" class="caption text-left">Credits</a>
         <a href="#" class="caption text-left">Terms of Service</a>  
