@@ -13,6 +13,8 @@
     <!-- GSAP Library -->
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+
 
     <!-- Main JS -->
     <script defer type="module" src="./js/home.js"></script>
@@ -46,31 +48,28 @@
             </ul>
           </li>
           <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="donor" class="navlink" href="donor.html">Donor</a></li>
           <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
           <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
         </ul>
         <br>
-        <a id="donor-btn-mobile" href="#" class="prim-btn">Be a Donor</a>
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
       </nav>
 
-      <a id="donor-btn-desktop" href="#" class="prim-btn">Be a Donor</a>
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
       <section id="hero" class="section-white orient-center fade-in">
-        <h2 class="display text-center">Brothers in Arms</h2>
-        <p class="sec-head t-red text-center">MEMORIAL PARK</p>
+        <h2 class="hidden display text-center">Brothers in Arms Memorial Park</h2>
+        <!-- <p class="sec-head t-red text-center">MEMORIAL PARK</p> -->
 
-        <p class="body-text text-center">STICK to <span class="t-red bold">Honor</span> . STICK to <span class="t-green bold">Remember</span> . STICK for Their <span class="t-orange bold">Tomorrow</span></p>
+        <div class="hero-banner-text">
+          <p class="display text-center">STICK to <span id="changing-text">Honor</span></p>
 
-        <img id="img-1" class="decor" src="./images/3_halftone.png" alt="Image of War">
-        <img id="img-2" class="decor" src="./images/24_halftone.png" alt="Image of War">
-        <img id="img-3" class="decor" src="./images/14_halftone.png" alt="Image of War">
-        <img id="img-4" class="decor" src="./images/20_halftone.png" alt="Image of War">
-
+          <p class="display text-center">STICK for Their <span class="t-orange bold">Tomorrow</span></p>
+        </div>
       </section>
 
       <!-- Video Intro -->
@@ -141,30 +140,48 @@
             <img src="./images/slide-4.jpg" alt="Image of War">
             <img src="./images/slide-5.jpg" alt="Image of War">
             <img src="./images/slide-6.jpg" alt="Image of War">
-          </div>
-
-          <div class="img-slide">
             <img src="./images/slide-7.jpg" alt="Image of War">
             <img src="./images/slide-8.jpg" alt="Image of War">
             <img src="./images/slide-9.jpg" alt="Image of War">
             <img src="./images/slide-10.jpg" alt="Image of War">
             <img src="./images/slide-11.jpg" alt="Image of War">
             <img src="./images/slide-12.jpg" alt="Image of War">
-          </div>
+          </div>   
+          
+          <div class="img-slide">
+            <img src="./images/slide-1.jpg" alt="Image of War">
+            <img src="./images/slide-2.jpg" alt="Image of War">
+            <img src="./images/slide-3.jpg" alt="Image of War">
+            <img src="./images/slide-4.jpg" alt="Image of War">
+            <img src="./images/slide-5.jpg" alt="Image of War">
+            <img src="./images/slide-6.jpg" alt="Image of War">
+            <img src="./images/slide-7.jpg" alt="Image of War">
+            <img src="./images/slide-8.jpg" alt="Image of War">
+            <img src="./images/slide-9.jpg" alt="Image of War">
+            <img src="./images/slide-10.jpg" alt="Image of War">
+            <img src="./images/slide-11.jpg" alt="Image of War">
+            <img src="./images/slide-12.jpg" alt="Image of War">
+          </div> 
 
           <div class="img-slide">
-            <img src="./images/slide-13.jpg" alt="Image of War">
-            <img src="./images/slide-14.jpg" alt="Image of War">
-            <img src="./images/slide-15.jpg" alt="Image of War">
-            <img src="./images/slide-16.jpg" alt="Image of War">
-            <img src="./images/slide-17.jpg" alt="Image of War">
-            <img src="./images/slide-18" alt="Image of War">
-          </div>
-          
+            <img src="./images/slide-1.jpg" alt="Image of War">
+            <img src="./images/slide-2.jpg" alt="Image of War">
+            <img src="./images/slide-3.jpg" alt="Image of War">
+            <img src="./images/slide-4.jpg" alt="Image of War">
+            <img src="./images/slide-5.jpg" alt="Image of War">
+            <img src="./images/slide-6.jpg" alt="Image of War">
+            <img src="./images/slide-7.jpg" alt="Image of War">
+            <img src="./images/slide-8.jpg" alt="Image of War">
+            <img src="./images/slide-9.jpg" alt="Image of War">
+            <img src="./images/slide-10.jpg" alt="Image of War">
+            <img src="./images/slide-11.jpg" alt="Image of War">
+            <img src="./images/slide-12.jpg" alt="Image of War">
+          </div>    
         </div>  
       
       </section>
 
+      <!-- Latest Blog -->
       <!-- Latest Blog -->
       <section id="latest-blogs" class="section-white fade-in">
         <div class="container-inline">
@@ -178,20 +195,20 @@
             <div class="container carousel-slide-two">
               <img src="./images/32_halftone.png" alt="Image of War">
               <div class="container-1 orient-left">
-                <h3 class="header">The Hero of Haifa – Major Dalpat Singh Shekhawat</h3>
+                <h3 class="sub-head">The Hero of Haifa – Major Dalpat Singh Shekhawat</h3>
                 <p class="body-text">Major Dalpat Singh Shekhawat, a highly decorated officer of the Jodhpur Lancers, stands as one of the most remarkable figures in military history. His valiant actions during World War I earned him a well-deserved Military Cross and cemented his legacy as the "Hero of Haifa."...              
                 </p>
 
                 <p class="caption">02/02/2025</p>
 
-                <a href="#" class="sec-btn">Read More</a>
+                <a href="blogs-detail.html" class="sec-btn">Read More</a>
               </div>
             </div>
 
             <div class="container carousel-slide-two">
               <img src="./images/brother_pic_main_leafs.png" alt="Image of War">
               <div class="container-1 orient-left">
-                <h3 class="header">Brothers in Arms – A Tribute to Indian and Canadian Soldiers in World War I</h3>
+                <h3 class="sub-head">Brothers in Arms – A Tribute to Indian and Canadian Soldiers in World War I</h3>
                 <p class="body-text">The history of World War I is filled with stories of bravery, sacrifice, and unity. Among the most remarkable chapters is the collaboration between Indian and Canadian soldiers who fought side by side during the war... 
                 </p>
 
@@ -387,7 +404,7 @@
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
       <section id="join-us" class="section-white orient-center fade-in">
-        <img src="./images/logo/logo-2.svg" alt="Brothers in Arms Logo">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
         <div class="container orient-center">
@@ -417,6 +434,19 @@
 
     <!-- FOOTER -->
     <footer id="footer" class="">
+      <!-- Footer Sitemap -->
+      <nav id="foot-sitemap">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="container-inline">
         <a href="#" class="caption text-left">Credits</a>
         <a href="#" class="caption text-left">Terms of Service</a>  
