@@ -45,6 +45,17 @@
         padding: 24px;
         align-items: center;
     }
+
+    .carousel-cont {
+        .carousel-item-gen {
+            .container {
+                img {
+                    height: 200px;
+
+                }
+            }
+        }
+    }
 }
 
 // Blog Detail
@@ -172,6 +183,17 @@
 
         .container-inline {
             padding: 24px 48px;
+        }
+
+        .carousel-cont {
+            .carousel-item-gen {
+                .container {
+                    img {
+                        height: 250px;
+                        
+                    }
+                }
+            }
         }
     }
 
