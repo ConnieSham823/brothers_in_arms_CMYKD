@@ -207,7 +207,7 @@
                     display: none;
                     position: absolute;
                     top: 10%;
-                    left: -12%;
+                    left: -10%;
                     list-style: none;
                     margin-top: 8px;
                     padding: 20px;
@@ -304,13 +304,14 @@
     
             .drop-down {
                 transition: transform 0.3s ease; 
-                height: 31px;
+                height: 30.5px;
+
                     
                 .drop-down-menus {
                     display: none;
                     position: absolute;
-                    top: 10%;
-                    left: -12%;
+                    top: 20%;
+                    left: -10%;
                     list-style: none;
                     margin-top: 8px;
                     padding: 20px;
