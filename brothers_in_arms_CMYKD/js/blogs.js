@@ -36,7 +36,7 @@ const app2 = Vue.createApp({
 const app = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/blogs"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/blogs"
     )
       .then((response) => response.json())
       .then((data) => {
