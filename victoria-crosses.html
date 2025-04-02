@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Brothers in Arms</title>
 
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-
     <!-- GSAP Library -->
-    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+    ></script>
+    <!-- Vue -->
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Main JS -->
     <script defer type="module" src="./js/victoria-crosses.js"></script>
   </head>
@@ -24,7 +30,9 @@
     <!-- NAVIGATION -->
     <header id="main-header" class="">
       <div>
-        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
+        <a href="index.html" id="logo"
+          ><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"
+        /></a>
 
         <div class="hamburger-menu">
           <button class="hamburger" aria-label="Toggle Menu">
@@ -36,24 +44,58 @@
 
       <nav class="mobile-menu">
         <ul>
-          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
           <li class="drop-down">
-            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <a
+              data-page="history"
+              class="drop-down-toggle sub-head navlink"
+              href="#"
+              >History</a
+            >
             <ul class="drop-down-menus">
-              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
-              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
-              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+              <li class="sub-head">
+                <a data-page="history" class="navlink" href="history.html"
+                  >History</a
+                >
+              </li>
+              <li class="sub-head">
+                <a
+                  data-page="victoria-crosses"
+                  class="navlink"
+                  href="victoria-crosses.html"
+                  >Victoria Crosses</a
+                >
+              </li>
+              <li class="sub-head">
+                <a data-page="letters" class="navlink" href="letters.html"
+                  >Letters</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
-          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
-        <br>
-        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
+        <br />
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn"
+          >Be a Donor</a
+        >
       </nav>
 
-      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn"
+        >Be a Donor</a
+      >
     </header>
 
     <!-- MAIN CONTENT -->
@@ -69,13 +111,23 @@
       <section id="about-vc" class="section-white orient-center fade-in">
         <h2 class="hidden">About Victoria Crosses</h2>
         <!-- Victoria Crosses -->
-        <img src="./images/victoria-cross.png" alt="Victoria Cross">
+        <img src="./images/victoria-cross.png" alt="Victoria Cross" />
 
         <!-- Content -->
         <div class="container-1 orient-center">
-          <p class="body-text text-center">The Victoria Cross (VC) is the highest military honor awarded for extraordinary bravery in combat. Established in 1856 by Queen Victoria, the medal is given to soldiers who display valor beyond duty, often in the face of certain death.</p>
+          <p class="body-text text-center">
+            The Victoria Cross (VC) is the highest military honor awarded for
+            extraordinary bravery in combat. Established in 1856 by Queen
+            Victoria, the medal is given to soldiers who display valor beyond
+            duty, often in the face of certain death.
+          </p>
 
-          <p class="body-text text-center">During World War I, both Canadian and Indian soldiers fought side by side, demonstrating incredible courage on the battlefield. Their heroic actions earned them the Victoria Cross, cementing their place in history.</p>
+          <p class="body-text text-center">
+            During World War I, both Canadian and Indian soldiers fought side by
+            side, demonstrating incredible courage on the battlefield. Their
+            heroic actions earned them the Victoria Cross, cementing their place
+            in history.
+          </p>
         </div>
       </section>
 
@@ -87,164 +139,82 @@
           <div id="ind-vc" class="container-1">
             <h3 class="display">11</h3>
             <p class="sub-head">Indian Army Soldiers</p>
-            <p class="body-text">Received the Victoria Cross for bravery during WWI.
+            <p class="body-text">
+              Received the Victoria Cross for bravery during WWI.
             </p>
           </div>
 
           <div id="cad-vc" class="container-1">
             <h3 class="display">69</h3>
             <p class="sub-head">Canadian Army Soldiers</p>
-            <p class="body-text">Were awarded the Victoria Cross for acts of heroism.
+            <p class="body-text">
+              Were awarded the Victoria Cross for acts of heroism.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Victoria Crosses Medal Winner -->
-       <section id="vc-medal-winners" class="section-white fade-in">
-        <h2 class="hidden">Victoria Crosses Medal Winners</h2>
+      <div id="app" class="section-white fade-in">
+        <section id="vc-medal-winners">
+          <h2 class="hidden">Victoria Crosses Medal Winners</h2>
 
-        <!-- Inject Content with Array -->
-        <div class="vc-carousel"> 
-          <div class="vc--carousel-item">
-            <div class="vc-winner-cont slide-vc">
+          <!-- Inject Content with Array -->
+          <div class="vc-carousel">
+            <div class="vc--carousel-item">
+              <div class="vc-winner-cont slide-vc">
+                <div
+                  v-for="(receipt, index) in victorias"
+                  :key="victorias.receipt_id"
+                  class="container-inline"
+                  data-index="0"
+                >
+                  <img
+                    v-if="receipt.images && receipt.images.length"
+                    :src="`./images/${receipt.images[0].image_link}`"
+                    :alt="receipt.image_alt"
+                  />
 
-              <div class="container-inline" data-index="0">
-                <img src="./images/frederick-hall.png" alt="Image of Frederick Hall">
-
-                <div class="container">
-                  <p class="sub-head">Company Sergeant Major Frederick Hall</p>
-                  <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="1">
-                <img src="./images/khudadad-khan.png" alt="Image of Khudadad Khan">
-
-                <div class="container">
-                  <p class="sub-head">Khudadad Khan</p>
-                  <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="2">
-                <img src="./images/colin-barron.png" alt="Image of Colin Barron">
-
-                <div class="container">
-                  <p class="sub-head">Corporal Colin Barron</p>
-                  <p class="caption">(3rd Battalion CEF, Passchendaele, November 1917)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="3">
-                <img src="./images/gobind-singh.png" alt="Image of Gobind Singh">
-
-                <div class="container">
-                  <p class="sub-head">Gobind Singh</p>
-                  <p class="caption">(28th Light Cavalry, France, 1917)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="4">
-                <img src="./images/james-richardson.png" alt="Image of Piper James Richardson">
-
-                <div class="container">
-                  <p class="sub-head">Piper James Richardson</p>
-                  <p class="caption">(16th Battalion CEF, Somme, October 1916)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="5">
-                <img src="./images/naik-shahamad.png" alt="Image of Naik Shahamad Khan">
-
-                <div class="container">
-                  <p class="sub-head">Naik Shahamad Khan</p>
-                  <p class="caption">(89th Punjabis, Mesopotamia, April 1916)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="6">
-                <img src="./images/wallace-algie.png" alt="Image of Lieutenant Wallace Algie">
-
-                <div class="container">
-                  <p class="sub-head">Lieutenant Wallace Algie</p>
-                  <p class="caption">(20th Battalion CEF, Cambrai, October 1918)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="7">
-                <img src="./images/karanbahadur.png" alt="Image of Karanbahadur Rana">
-
-                <div class="container">
-                  <p class="sub-head">Karanbahadur Rana</p>
-                  <p class="caption">(2nd Battalion, 3rd Queen Alexandra's Gurkha Rifles, 1918)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="8">
-                <img src="./images/harry-brown.png" alt="Image of Private Harry Brown">
-
-                <div class="container">
-                  <p class="sub-head">Private Harry Brown</p>
-                  <p class="caption">(10th Battalion CEF, Loos, August 1917)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="10">
-                <img src="./images/darwan-singh.png" alt="Image of Darwan Singh Negi">
-
-                <div class="container">
-                  <p class="sub-head">Darwan Singh Negi</p>
-                  <p class="caption">(39th Garhwal Rifles, November 1914)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="11">
-                <img src="./images/john-pattison.png" alt="Image of Private John Pattison">
-
-                <div class="container">
-                  <p class="sub-head">Private John Pattison</p>
-                  <p class="caption">(50th Battalion CEF, Vimy Ridge, July 1917)</p>
-                </div>
-              </div>
-
-              <div class="container-inline" data-index="12">
-                <img src="./images/khudadad-khan.png" alt="Image of Khudadad Khan">
-
-                <div class="container">
-                  <p class="sub-head">Khudadad Khan</p>
-                  <p class="caption">(129th Baluchis, First Battle of Ypres, October 1914)</p>
+                  <div class="container">
+                    <p class="sub-head">{{ receipt.name }}</p>
+                    <p class="caption">{{ receipt.unit }}</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-
+            <!-- Pagination Bullets -->
+            <ul class="pagination-vc">
+              <li class="page-number active" data-index="0">1</li>
+              <li class="page-number" data-index="1">2</li>
+              <li class="page-number" data-index="2">3</li>
+            </ul>
           </div>
-
-          <!-- Pagination Bullets -->
-          <ul class="pagination-vc">
-            <li class="page-number active" data-index="0">1</li>
-            <li class="page-number" data-index="1">2</li>
-            <li class="page-number" data-index="2">3</li>
-          </ul>
-        </div>
-       </section>
+        </section>
+      </div>
 
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
       <section id="join-us" class="section-white orient-center fade-in">
-        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo" />
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
         <div class="container orient-center">
-          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+          <h3 class="body-text text-center">
+            Subscribe for Latest News and Updates
+          </h3>
 
           <form class="container-1 orient-center">
             <!-- Newsletter Subscribe -->
             <label class="hidden" for="email">Email</label>
-            <input name="email" type="text" placeholder="Your Email" id="email">
+            <input
+              name="email"
+              type="text"
+              placeholder="Your Email"
+              id="email"
+            />
 
-            <input type="submit" value="Send" class="prim-btn">
+            <input type="submit" value="Send" class="prim-btn" />
           </form>
         </div>
 
@@ -261,15 +231,13 @@
       <div id="lightbox" class="lightbox">
         <div class="lightbox-content">
           <span class="close">&times;</span>
-          <img class="hero-img">
+          <img class="hero-img" />
           <h2 class="lightbox-title header"></h2>
           <p class="lightbox-text body-text"></p>
           <ul class="achievements body-text"></ul>
-          <img class="flag">
+          <img class="flag" />
         </div>
       </div>
-      
-    
     </main>
 
     <!-- FOOTER -->
@@ -277,23 +245,45 @@
       <!-- Footer Sitemap -->
       <nav id="foot-sitemap">
         <ul>
-          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
-          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
-          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
-          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
-          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
-          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="history" class="navlink" href="history.html"
+              >History</a
+            >
+          </li>
+          <li class="sub-head">
+            <a class="navlink" href="victoria-crosses.html">Victoria Crosses</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="letters" class="navlink" href="letters.html"
+              >Letters</a
+            >
+          </li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
 
       <div class="container-inline">
         <a href="#" class="caption text-left">Credits</a>
-        <a href="#" class="caption text-left">Terms of Service</a>  
+        <a href="#" class="caption text-left">Terms of Service</a>
       </div>
 
       <div class="container-inline">
-        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+        <p class="caption text-right">
+          Shrishti Foundation &copy; 2025 All Rights Reserved
+        </p>
       </div>
     </footer>
   </body>

@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Brothers in Arms</title>
 
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
     <!-- GSAP Library -->
-    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+    ></script>
+    <!-- Vue -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js
+    "
+    ></script>
     <!-- Main JS -->
     <script defer type="module" src="./js/events.js"></script>
   </head>
@@ -24,7 +35,9 @@
     <!-- NAVIGATION -->
     <header id="main-header" class="">
       <div>
-        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
+        <a href="index.html" id="logo"
+          ><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"
+        /></a>
 
         <div class="hamburger-menu">
           <button class="hamburger" aria-label="Toggle Menu">
@@ -36,24 +49,58 @@
 
       <nav class="mobile-menu">
         <ul>
-          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
           <li class="drop-down">
-            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <a
+              data-page="history"
+              class="drop-down-toggle sub-head navlink"
+              href="#"
+              >History</a
+            >
             <ul class="drop-down-menus">
-              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
-              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
-              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+              <li class="sub-head">
+                <a data-page="history" class="navlink" href="history.html"
+                  >History</a
+                >
+              </li>
+              <li class="sub-head">
+                <a
+                  data-page="victoria-crosses"
+                  class="navlink"
+                  href="victoria-crosses.html"
+                  >Victoria Crosses</a
+                >
+              </li>
+              <li class="sub-head">
+                <a data-page="letters" class="navlink" href="letters.html"
+                  >Letters</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
-          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
-        <br>
-        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
+        <br />
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn"
+          >Be a Donor</a
+        >
       </nav>
 
-      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn"
+        >Be a Donor</a
+      >
     </header>
 
     <!-- MAIN CONTENT -->
@@ -66,80 +113,57 @@
       </section>
 
       <!-- Upcoming Events -->
-      <section id="upcoming-events" class="section-white fade-in">
-        <div class="container-inline">
-          <h2 class="header">Upcoming Events</h2>
-        </div>
-
-        <!-- Events [Dynamic] -->
-        <div class="carousel-cont">
-          <div id="upcoming-e"  class="carousel-item-gen-two">
-            <div class="container carousel-slide-two">
-              <img src="./images/holi-festival.jpg" alt="Holi Festival">
-              <div class="container-1 orient-left">
-                <h3 class="sub-head t-orange">Holi 2025 Special</h3>
-                <p class="body-text"> Location: Victoria Park, Toronto <br><br>
-                  Date: April 26, 2025<br><br>
-                  Join us for a special Holi 2025 event, celebrating the spirit of unity and remembrance through color and history. This event will feature:<br><br></p>
-
-                  <ul>
-                    <li class="body-text">STICK for Remembrance Activity</li>
-                    <li class="body-text">Live Storytelling &amp; History Sessions</li>
-                    <li class="body-text">Memorial Fundraising Booth</li>
-                    <li class="body-text">Cultural Performances &amp; Community Gathering</li>
-                  </ul>
-
-                  <br>
-
-                <p class="body-text">Register now to participate and be part of history!
-                </p>
-
-                <p class="caption">02/02/2025</p>
-
-                <div class="container-inline">
-                  <a href="#" class="sec-btn">Read More</a>
-                  <a href="#" class="prim-btn">Register</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="container carousel-slide-two">
-              <img src="./images/holi-festival.jpg" alt="Holi Festival">
-              <div class="container-1 orient-left">
-                <h3 class="header t-orange">Veterans Memorial</h3>
-                <p class="body-text"> Location: Costco, London<br><br>
-                  Date: November 11, 2025<br><br>
-                  This Veterans Memorial Day, honor the brave souls who served with courage and sacrifice. Buy a sticker to show your support—every purchase helps preserve their legacy and build the Brothers in Arms Memorial.<br><br></p>
-
-                  <ul>
-                    <li class="body-text">STICK for Remembrance Activity</li>
-                    <li class="body-text">Live Storytelling &amp; History Sessions</li>
-                    <li class="body-text">Memorial Fundraising Booth</li>
-                    <li class="body-text">Cultural Performances &amp; Community Gathering</li>
-                  </ul>
-
-                  <br>
-
-                <p class="body-text">Register now to participate and be part of history!
-                </p>
-
-                <p class="caption">02/02/2025</p>
-
-                <div class="container-inline">
-                  <a href="#" class="sec-btn">Read More</a>
-                  <a href="#" class="prim-btn">Register</a>
-                </div>
-              </div>
-            </div>
+      <div id="app" class="section-white fade-in vue-app">
+        <section id="upcoming-events">
+          <div class="container-inline">
+            <h2 class="header">Upcoming Events</h2>
           </div>
 
-          <!-- Pagination Bullets -->
-          <ul class="carousel-pagination-two">
-            <li class="carousel-bullet-two active" data-index="0"></li>
-            <li class="carousel-bullet-two" data-index="1"></li>
-          </ul>
-        </div>
-      </section>
+          <!-- Events [Dynamic] -->
+          <div class="carousel-cont">
+            <div id="upcoming-e" class="carousel-item-gen-two">
+              <div
+                v-for="(event, index) in events"
+                :key="event.event_id"
+                class="container carousel-slide-two"
+              >
+                <img :src="`./images/${event.image}`" alt="Holi Festival" />
+                <div class="container-1 orient-left">
+                  <h3 class="sub-head t-orange">{{event.title}}</h3>
+                  <p class="body-text">
+                    Location: {{event.location}} <br /><br />
+                    Date: {{event.date}}<br /><br />
+                    {{event.detail}}<br /><br />
+                  </p>
+
+                  <br />
+
+                  <p class="body-text">
+                    Register now to participate and be part of history!
+                  </p>
+
+                  <p class="caption">02/02/2025</p>
+
+                  <div class="container-inline">
+                    <a
+                      :href="`./events-detail.html?id=${event.id}`"
+                      class="sec-btn"
+                      >Read More</a
+                    >
+                    <a href="#" class="prim-btn">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Bullets -->
+            <ul class="carousel-pagination-two">
+              <li class="carousel-bullet-two active" data-index="0"></li>
+              <li class="carousel-bullet-two" data-index="1"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <!-- Past Events -->
       <section id="past-events" class="section-grey fade-in">
@@ -148,41 +172,26 @@
         </div>
 
         <!-- Events [Dynamic] -->
-        <div class="carousel-cont">
+        <div id="app2" class="carousel-cont">
           <div id="past-e" class="carousel-item-gen">
-            <div class="container carousel-slide">
-              <img src="./images/tree-planting.jpeg" alt="London Tree Planting">
+            <div
+              v-for="(event, index) in events"
+              :key="event.event_id"
+              class="container carousel-slide"
+            >
+              <img
+                :src="`./images/${event.image}`"
+                alt="London Tree Planting"
+              />
               <div class="container-1 orient-left">
-                <h3 class="sub-head">108 Trees Memorial – Honoring Indian Soldiers - May 26, 2018</h3>
-                <p class="body-text">On May 26th, 2018, the first phase of an inspiring memorial project was successfully completed in partnership with the City of London and Trees for 3 Dots. The project saw the planting of 108 trees along the Veterans Memorial Parkway in London, Ontario. This site, less than a 2-minute drive from the 401 Freeway, serves as the location for the memorial. The trees were planted in rows and columns, much like soldiers standing together in formation, symbolizing a "Living Guard of Honour" for the Indian soldiers who fought alongside the Canadian forces during World War I...</p>
+                <h3 class="sub-head">{{event.title}}</h3>
+                <p class="body-text">{{event.detail}}</p>
 
-                <p class="caption">02/02/2025</p>
+                <p class="caption">{{event.date}}</p>
 
-                <a href="#" class="sec-btn">Read More</a>
-              </div>
-            </div>
-
-            <div class="container carousel-slide">
-              <img src="./images/tree-planting.jpeg" alt="London Tree Planting">
-              <div class="container-1 orient-left">
-                <h3 class="header">108 Trees Memorial – Honoring Indian Soldiers - May 26, 2018</h3>
-                <p class="body-text">On May 26th, 2018, the first phase of an inspiring memorial project was successfully completed in partnership with the City of London and Trees for 3 Dots. The project saw the planting of 108 trees along the Veterans Memorial Parkway in London, Ontario. This site, less than a 2-minute drive from the 401 Freeway, serves as the location for the memorial. The trees were planted in rows and columns, much like soldiers standing together in formation, symbolizing a "Living Guard of Honour" for the Indian soldiers who fought alongside the Canadian forces during World War I...</p>
-
-                <p class="caption">02/02/2025</p>
-
-                <a href="#" class="sec-btn">Read More</a>
-              </div>
-            </div>
-
-            <div class="container carousel-slide">
-              <img src="./images/tree-planting.jpeg" alt="London Tree Planting">
-              <div class="container-1 orient-left">
-                <h3 class="header">108 Trees Memorial – Honoring Indian Soldiers - May 26, 2018</h3>
-                <p class="body-text">On May 26th, 2018, the first phase of an inspiring memorial project was successfully completed in partnership with the City of London and Trees for 3 Dots. The project saw the planting of 108 trees along the Veterans Memorial Parkway in London, Ontario. This site, less than a 2-minute drive from the 401 Freeway, serves as the location for the memorial. The trees were planted in rows and columns, much like soldiers standing together in formation, symbolizing a "Living Guard of Honour" for the Indian soldiers who fought alongside the Canadian forces during World War I...</p>
-
-                <p class="caption">02/02/2025</p>
-
-                <a href="#" class="sec-btn">Read More</a>
+                <a :href="`./events-detail.html?id=${event.id}`" class="sec-btn"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -199,18 +208,25 @@
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
       <section id="join-us" class="section-white orient-center fade-in">
-        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo" />
         <h2 class="display text-center">Join Us to Commemorate</h2>
 
         <div class="container orient-center">
-          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+          <h3 class="body-text text-center">
+            Subscribe for Latest News and Updates
+          </h3>
 
           <form class="container-1 orient-center">
             <!-- Newsletter Subscribe -->
             <label class="hidden" for="email">Email</label>
-            <input name="email" type="text" placeholder="Your Email" id="email">
+            <input
+              name="email"
+              type="text"
+              placeholder="Your Email"
+              id="email"
+            />
 
-            <input type="submit" value="Send" class="prim-btn">
+            <input type="submit" value="Send" class="prim-btn" />
           </form>
         </div>
 
@@ -222,9 +238,6 @@
           <a href="#" class="prim-btn">Be a Donor</a>
         </div>
       </section>
-
-      
-    
     </main>
 
     <!-- FOOTER -->
@@ -232,23 +245,45 @@
       <!-- Footer Sitemap -->
       <nav id="foot-sitemap">
         <ul>
-          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
-          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
-          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
-          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
-          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
-          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
-          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="history" class="navlink" href="history.html"
+              >History</a
+            >
+          </li>
+          <li class="sub-head">
+            <a class="navlink" href="victoria-crosses.html">Victoria Crosses</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="letters" class="navlink" href="letters.html"
+              >Letters</a
+            >
+          </li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
 
       <div class="container-inline">
         <a href="#" class="caption text-left">Credits</a>
-        <a href="#" class="caption text-left">Terms of Service</a>  
+        <a href="#" class="caption text-left">Terms of Service</a>
       </div>
 
       <div class="container-inline">
-        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+        <p class="caption text-right">
+          Shrishti Foundation &copy; 2025 All Rights Reserved
+        </p>
       </div>
     </footer>
   </body>
