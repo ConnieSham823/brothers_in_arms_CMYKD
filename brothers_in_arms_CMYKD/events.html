@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Brothers in Arms</title>
+
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- GSAP Library -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+    ></script>
+    <!-- Vue -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js
+    "
+    ></script>
+    <!-- Main JS -->
+    <script defer type="module" src="./js/events.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Website</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo"
+          ><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"
+        /></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
+          <li class="drop-down">
+            <a
+              data-page="history"
+              class="drop-down-toggle sub-head navlink"
+              href="#"
+              >History</a
+            >
+            <ul class="drop-down-menus">
+              <li class="sub-head">
+                <a data-page="history" class="navlink" href="history.html"
+                  >History</a
+                >
+              </li>
+              <li class="sub-head">
+                <a
+                  data-page="victoria-crosses"
+                  class="navlink"
+                  href="victoria-crosses.html"
+                  >Victoria Crosses</a
+                >
+              </li>
+              <li class="sub-head">
+                <a data-page="letters" class="navlink" href="letters.html"
+                  >Letters</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <br />
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn"
+          >Be a Donor</a
+        >
+      </nav>
+
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn"
+        >Be a Donor</a
+      >
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-events" class="section-white orient-center fade-in">
+        <h2 class="display text-center">Events</h2>
+
+        <p class="body-text text-center">Take a look at our activities</p>
+      </section>
+
+      <!-- Upcoming Events -->
+      <div id="app" class="section-white fade-in vue-app">
+        <section id="upcoming-events">
+          <div class="container-inline">
+            <h2 class="header">Upcoming Events</h2>
+          </div>
+
+          <!-- Events [Dynamic] -->
+          <div class="carousel-cont">
+            <div id="upcoming-e" class="carousel-item-gen-two">
+              <div
+                v-for="(event, index) in events"
+                :key="event.event_id"
+                class="container carousel-slide-two"
+              >
+                <img :src="`./images/${event.image}`" alt="Holi Festival" />
+                <div class="container-1 orient-left">
+                  <h3 class="sub-head t-orange">{{event.title}}</h3>
+                  <p class="body-text">
+                    Location: {{event.location}} <br /><br />
+                    Date: {{event.date}}<br /><br />
+                    {{event.detail}}<br /><br />
+                  </p>
+
+                  <br />
+
+                  <p class="body-text">
+                    Register now to participate and be part of history!
+                  </p>
+
+                  <p class="caption">02/02/2025</p>
+
+                  <div class="container-inline">
+                    <a
+                      :href="`./events-detail.html?id=${event.id}`"
+                      class="sec-btn"
+                      >Read More</a
+                    >
+                    <a href="#" class="prim-btn">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Bullets -->
+            <ul class="carousel-pagination-two">
+              <li class="carousel-bullet-two active" data-index="0"></li>
+              <li class="carousel-bullet-two" data-index="1"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Past Events -->
+      <section id="past-events" class="section-grey fade-in">
+        <div class="container-inline">
+          <h2 class="header">Past Events</h2>
+        </div>
+
+        <!-- Events [Dynamic] -->
+        <div id="app2" class="carousel-cont">
+          <div id="past-e" class="carousel-item-gen">
+            <div
+              v-for="(event, index) in events"
+              :key="event.event_id"
+              class="container carousel-slide"
+            >
+              <img
+                :src="`./images/${event.image}`"
+                alt="London Tree Planting"
+              />
+              <div class="container-1 orient-left">
+                <h3 class="sub-head">{{event.title}}</h3>
+                <p class="body-text">{{event.detail}}</p>
+
+                <p class="caption">{{event.date}}</p>
+
+                <a :href="`./events-detail.html?id=${event.id}`" class="sec-btn"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Bullets -->
+          <ul class="carousel-pagination">
+            <li class="carousel-bullet active" data-index="0"></li>
+            <li class="carousel-bullet" data-index="1"></li>
+            <li class="carousel-bullet" data-index="2"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center fade-in">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo" />
+        <h2 class="display text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">
+            Subscribe for Latest News and Updates
+          </h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input
+              name="email"
+              type="text"
+              placeholder="Your Email"
+              id="email"
+            />
+
+            <input type="submit" value="Send" class="prim-btn" />
+          </form>
+        </div>
+
+        <div class="line-seperator"></div>
+
+        <div class="container-1 orient-center">
+          <p class="display text-center">Build with Us</p>
+
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <!-- Footer Sitemap -->
+      <nav id="foot-sitemap">
+        <ul>
+          <li class="sub-head">
+            <a data-page="index" class="navlink" href="index.html">Home</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="history" class="navlink" href="history.html"
+              >History</a
+            >
+          </li>
+          <li class="sub-head">
+            <a class="navlink" href="victoria-crosses.html">Victoria Crosses</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="letters" class="navlink" href="letters.html"
+              >Letters</a
+            >
+          </li>
+          <li class="sub-head">
+            <a data-page="blogs" class="navlink" href="blogs.html">Blogs</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="events" class="navlink" href="events.html">Events</a>
+          </li>
+          <li class="sub-head">
+            <a data-page="contact" class="navlink" href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">
+          Shrishti Foundation &copy; 2025 All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

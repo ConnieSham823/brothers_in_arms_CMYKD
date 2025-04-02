@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    div {
+        padding: 6px 0;
+    }
+
+    #foot-sitemap {
+        margin-bottom: 24px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style: none;
+                padding: 4px 12px;
+
+                a {
+                    text-decoration: none;
+                    color: v.$grey;
+                }
+            }
+
+            .navlink {
+                color: v.$grey;
+                position: relative;
+            }
+        
+            .navlink:hover {
+                text-decoration: none;
+                color: v.$red;
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #footer {
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #footer {
+        padding: 48px;
+    }
+}
