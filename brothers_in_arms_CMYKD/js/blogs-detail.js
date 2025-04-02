@@ -45,7 +45,7 @@ createApp({
     }
 
     fetch(
-      `http://localhost:8888/BrothersInArms/BrothersInArms_API/public/blogs/${blogId}`
+      `http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/blogs/${blogId}`
     )
       .then((response) => {
         if (!response.ok) {

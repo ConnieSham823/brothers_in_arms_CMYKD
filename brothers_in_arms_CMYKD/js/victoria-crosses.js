@@ -18,7 +18,7 @@ const app = Vue.createApp({
     console.log("🔥 Vue #app created()");
 
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/victorias"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/victorias"
     )
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);

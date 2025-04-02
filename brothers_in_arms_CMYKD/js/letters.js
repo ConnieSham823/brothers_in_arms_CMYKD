@@ -16,7 +16,7 @@ lettersLightbox();
 const app = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/warletters"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/warletters"
     )
       .then((response) => response.json())
       .then((data) => {

@@ -14,7 +14,7 @@ generalCarousel();
 const app = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/events"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/events"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -41,7 +41,7 @@ const app = Vue.createApp({
 const app2 = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/events"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/events"
     )
       .then((response) => response.json())
       .then((data) => {

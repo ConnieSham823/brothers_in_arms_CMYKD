@@ -20,7 +20,7 @@ textChange();
 const app = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/blogs"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/blogs"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -41,7 +41,7 @@ const app = Vue.createApp({
   methods: {
     getBlog(id) {
       fetch(
-        `http://localhost:8888/BrothersInArms/BrothersInArms_API/public/blogs/${id}`
+        `http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/blogs/${id}`
       )
         .then((response) => response.json())
         .then((data) => {
