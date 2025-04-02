@@ -19,7 +19,7 @@ const app = Vue.createApp({
     const params = new URLSearchParams(window.location.search);
     const eventID = params.get("id");
     fetch(
-      `http://localhost:8888/BrothersInArms/BrothersInArms_API/public/events/${eventID}`
+      `http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/events/${eventID}`
     )
       .then((response) => {
         return response.json();

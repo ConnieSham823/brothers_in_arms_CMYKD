@@ -16,7 +16,7 @@ milestoneCarousel();
 const AmountApp = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/donations"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/donations"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -36,7 +36,7 @@ const AmountApp = Vue.createApp({
 const DonorApp = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/donations"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/donations"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -59,7 +59,7 @@ const DonorApp = Vue.createApp({
 const SponsorApp = Vue.createApp({
   created() {
     fetch(
-      "http://localhost:8888/BrothersInArms/BrothersInArms_API/public/sponsorships"
+      "http://localhost:8888/brothers_in_arms_CMYKD/BrothersInArms_API/public/sponsorships"
     )
       .then((response) => response.json())
       .then((data) => {
