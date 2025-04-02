@@ -1,0 +1,221 @@
+@use "../abstracts/variables" as v;
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .carousel-item {
+        width: 100%;
+        display: flex;
+
+        .slide {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+
+.milestone-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .milestone-item {
+        display: flex;
+        padding: 24px;
+        gap: 48px;
+
+        .container-2 {
+            .container-1 {
+                padding-left: 24px;
+            }
+        }
+
+        .slide-milestone {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+// Milestone Pagination
+.milestone-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+
+    .bullet-page {
+        width: 20px;
+        height: 20px;
+        background: v.$grey;
+        border-radius: 50%;
+        opacity: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .bullet-page.active {
+        background: v.$orange;
+        transform: scale(1.2);
+        opacity: 100%;
+
+        outline: 3px solid v.$red;  
+        outline-offset: 3px;
+    }
+    
+}
+
+// Bullet Pagination
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.bullet {
+    width: 10px;
+    height: 10px;
+    background: v.$grey;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bullet.active {
+    background: v.$black;
+    transform: scale(1.2);
+}
+
+// Victoria Crosses Pagination
+// Bullet Pagination
+.pagination-vc {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.page-number {
+    font-size: v.$subhead;
+    font-family: v.$header-font;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page-number.active {
+    transform: scale(1.2);
+}
+
+// General Carousel
+.carousel-cont {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .carousel-item-gen {
+        display: flex;
+        padding: 24px;
+        gap: 48px;
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+// General Bullet Pagination
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-bullet {
+    width: 10px;
+    height: 10px;
+    background: v.$grey;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-bullet.active {
+    background: v.$black;
+    transform: scale(1.2);
+}
+
+
+// General Carousel 2
+.carousel-cont {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    .carousel-item-gen-two {
+        display: flex;
+        padding: 0;
+        gap: 48px;
+
+        .carousel-slide-two {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+// General Bullet Pagination 2
+.carousel-pagination-two {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-bullet-two {
+    width: 10px;
+    height: 10px;
+    background: v.$grey;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-bullet-two.active {
+    background: v.$black;
+    transform: scale(1.2);
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+
+}
+
+// Laptop Size
+@media screen and (min-width: 1200px) {
+}
+

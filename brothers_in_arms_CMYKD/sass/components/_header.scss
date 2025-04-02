@@ -1,0 +1,348 @@
+@use "../abstracts/variables" as v;
+
+// Mobile Menu Style
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    z-index: 95;
+}
+
+#logo {
+
+    img {
+        width: 75px;
+        height: 100%;
+    }
+    
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: v.$white;
+    color: v.$black;
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul {
+        list-style: none;
+        text-align: center;
+
+        .drop-down {
+            transition: transform 0.3s ease; 
+                
+            .drop-down-menus {
+                display: none;
+                list-style: none;
+                margin-top: 8px;
+                padding: 20px;
+
+                li {
+                    padding: 5px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                a {
+                    display: block;
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .drop-down.active .drop-down-menus {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    li {
+        margin: 16px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: v.$black;
+        font-size: v.$header;
+    }
+
+    .navlink {
+        color: v.$grey;
+        position: relative;
+    }
+
+    .navlink:hover {
+        text-decoration: none;
+        color: v.$red;
+        text-decoration: underline;
+    }
+
+    .navlink.active {
+        text-decoration: none;
+        color: v.$red;
+        text-decoration: underline;
+    }
+
+    .prim-btn {
+        font-size: v.$body;
+        color: v.$white;
+    }
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+// Hamburger Menu Style
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: v.$black;
+    border-radius: 2px;
+    transition: transform 0.3s ease , opacity 0.5s ease;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+  
+.line-top {
+    transform-origin: center;
+}
+  
+.line-bot {
+    transform-origin: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+}
+
+// Hamburger Animation
+.hamburger.active .line-top {
+    transform: rotate(45deg);
+    transform-origin: center
+}
+  
+.hamburger.active .line-bot {
+    transform: rotate(-45deg);
+    transform-origin: center
+}
+  
+.hamburger.active .line {
+    position: absolute;
+}
+
+#donor-btn-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #main-header {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        background: v.$white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hide-nav {
+        transform: translateY(-100%);
+    }    
+
+    #donor-btn-desktop {
+        display: block;
+    }
+
+
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        top: 10px;
+        left: 0;
+        width: 400px;
+        height: auto;
+        background: none;
+        backdrop-filter: none;
+        color: v.$black;
+        z-index: 90;
+        align-items: center;
+
+        // History Dropdown
+        ul {
+            list-style: none;
+            text-align: center;
+    
+            .drop-down {
+                transition: transform 0.3s ease;
+                    
+                .drop-down-menus {
+                    display: none;
+                    position: absolute;
+                    top: 10%;
+                    left: -12%;
+                    list-style: none;
+                    margin-top: 8px;
+                    padding: 20px;
+                    background-color: v.$white;
+                    z-index: -10;
+    
+                    li {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                    }
+    
+                    a {
+                        display: block;
+                        margin: 0;
+                        font-size: v.$subhead
+                    }
+                }
+            }
+    
+            .drop-down:hover .drop-down-menus {
+                display: block;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        #donor-btn-mobile {
+            display: none;
+        }
+    
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: row;
+            list-style: none;
+            text-align: center;
+        }
+    
+        li {
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        a {
+            text-decoration: none;
+            color: v.$darkgrey;
+            font-size: v.$subhead;
+        }
+
+        a:hover {
+            color: v.$black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main-header {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        background: v.$white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hide-nav {
+        transform: translateY(-100%);
+    }    
+
+    #donor-btn-desktop {
+        display: block;
+    }
+
+
+    .mobile-menu {
+
+        // History Dropdown
+        ul {
+            list-style: none;
+            text-align: center;
+    
+            .drop-down {
+                transition: transform 0.3s ease; 
+                height: 31px;
+                    
+                .drop-down-menus {
+                    display: none;
+                    position: absolute;
+                    top: 10%;
+                    left: -12%;
+                    list-style: none;
+                    margin-top: 8px;
+                    padding: 20px;
+                    background-color: v.$white;
+                    z-index: -10;
+    
+                    li {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                    }
+    
+                    a {
+                        display: block;
+                        margin: 0;
+                        font-size: v.$subhead
+                    }
+                }
+            }
+    
+            .drop-down:hover .drop-down-menus {
+                display: block;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        li {
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

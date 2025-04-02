@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Brothers in Arms</title>
+
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- GSAP Library -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Main JS -->
+    <script defer type="module" src="./js/history.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Website</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="drop-down">
+            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <ul class="drop-down-menus">
+              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+            </ul>
+          </li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
+      </nav>
+
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="history-hero" class="section-white orient-center fade-in">
+        <h2 class="display">History</h2>
+
+        <p class="body-text text-center">Brothers in Arms Memorial: <span class="bold">A Journey Through Time</span></p>
+      </section>
+
+      <!-- History Highlight 1 -->
+      <section class="section-grey history-highlight">
+        <!-- History Line -->
+        <div class="decor history-line-1"></div>
+
+        <h2 class="hidden">History Highlight 1</h2>
+
+        <div class="history-detail">
+          <img class="fade-in" src="./images/7_halftone.png" alt="Image of War">
+
+          <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
+            <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
+          </svg>
+
+          <div class="container fade-in">
+            <h3 class="header t-red">1914</h3>
+            <p class="sub-head">The War Begins and India Joins the Fight</p>
+            <p class="body-text"><span class="bold">August 4, 1914</span>
+              Britain declares war on Germany; the British Indian Army is mobilized.
+            </p>
+            <p class="body-text"><span class="bold">September 26, 1914</span>
+              The Lahore Division of the Indian Army arrives in Marseilles, France to reinforce British forces.
+            </p>
+          </div>
+        </div>
+
+        <div class="history-detail">
+          <img class="fade-in" src="./images/6_halftone.png" alt="Image of War">
+
+          <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
+            <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
+          </svg>
+
+          <div class="container fade-in">
+            <p class="sub-head">The Indian Army Saves the British Expeditionary Force (BEF)</p>
+            <p class="body-text"><span class="bold">1914</span>
+              The Indian Army Saves the British Expeditionary Force (BEF)
+            </p>
+            <p class="body-text"><span class="bold">September 26, 1914</span>
+              The Indian Army holds the Ypres Salient, preventing a German breakthrough.
+              Without their support, the British might have lost Belgium's channel ports, changing the course of the war.
+            </p>
+          </div>
+        </div>
+
+      </section>
+      
+      <!-- History Highlight 2 -->
+      <section class="section-white history-highlight">
+        <!-- History Line -->
+        <div class="decor history-line"></div>
+
+        <h2 class="hidden">History Highlight 2</h2>
+
+        <div class="history-detail-rev">
+          <img class="fade-in" src="./images/26_halftone.png" alt="Image of War">
+
+          <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
+            <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
+          </svg>
+
+          <div class="container fade-in">
+            <h3 class="header t-red">1915</h3>
+            <p class="sub-head">The Arrival of Canadian Troops and Joint Battles Begin</p>
+            <p class="body-text"><span class="bold">January 14, 1915</span>
+              The 1st Canadian Division lands in France, joining the fight alongside Indian soldiers.
+            </p>
+
+            <p class="body-text"><span class="bold">April, 1915</span>
+              2nd Battle of Ypres
+              The Canadian Expeditionary Force (CEF) faces Germany's first poison gas attack.
+              The Lahore Division counterattacks, helping Canada withdraw and regroup.
+            </p>
+
+            <p class="body-text"><span class="bold">May, 1915</span>
+              Battle of Festubert
+              Indian and Canadian troops fight side by side, securing strategic positions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- History Highlight 3 -->
+      <section class="section-grey history-highlight">
+        <!-- History Line -->
+        <div class="decor history-line"></div>
+
+        <h2 class="hidden">History Highlight 3</h2>
+
+        <div class="history-detail">
+          <img class="fade-in" src="./images/18_halftone.png" alt="Image of War">
+
+          <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
+            <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
+          </svg>
+
+          <div class="container fade-in">
+            <h3 class="header t-red">1916 - 1917</h3>
+            <p class="sub-head">Joint Efforts at the Somme and Vimy Ridge</p>
+            <p class="body-text"><span class="bold">1916</span>
+              Battle of the Somme
+              Indian artillery supports the 3rd &amp; 4th Canadian Divisions, contributing to one of the most decisive battles of the war.
+            </p>
+            <p class="body-text"><span class="bold">April, 1917</span>
+              Battle of Vimy Ridge
+              Indian cavalry and artillery play a crucial role in Canada's greatest military victory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- History Highlight 4 -->
+      <section class="history-highlight">
+        <!-- History Line -->
+        <div class="decor history-line-end"></div>
+
+        <h2 class="hidden">History Highlight 4</h2>
+
+        <div class="history-detail-rev">
+          <img class="fade-in" src="./images/24_halftone.png" alt="Image of War">
+
+          <svg class="history-circle" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="15" stroke="#5B5B5B" stroke-width="4"/>
+            <circle cx="17" cy="17" r="9" fill="#5B5B5B"/>
+          </svg>
+
+          <div class="container fade-in">
+            <h3 class="header t-red">1918</h3>
+            <p class="sub-head">The Final Year &amp; Shared Sacrifice</p>
+            <p class="body-text"><span class="bold">1918</span>
+              Canadian &amp; Indian soldiers continue fighting together on the Western Front until the war's end.
+            </p>
+            <p class="body-text"><span class="bold">November 11, 1918</span>
+              The Armistice is signed, bringing World War I to a close.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center fade-in">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
+        <h2 class="display text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+
+        <div class="line-seperator"></div>
+
+        <div class="container-1 orient-center">
+          <p class="display text-center">Build with Us</p>
+
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+      </section>
+
+      
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <!-- Footer Sitemap -->
+      <nav id="foot-sitemap">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>  
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

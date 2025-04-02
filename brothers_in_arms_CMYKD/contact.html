@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Brothers in Arms</title>
+
+    <!-- Plyr -->
+    <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- GSAP Library -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Main JS -->
+    <script defer type="module" src="./js/contact.js"></script>
+  </head>
+
+  <body>
+    <h1 class="hidden">Brothers in Arms Donor Page</h1>
+
+    <!-- NAVIGATION -->
+    <header id="main-header" class="">
+      <div>
+        <a href="index.html" id="logo"><img src="./images/logo/logo-3.svg" alt="Brothers' in Arms Logo"></a>
+
+        <div class="hamburger-menu">
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span class="line line-top"></span>
+            <span class="line line-bot"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="drop-down">
+            <a data-page="history" class="drop-down-toggle sub-head navlink" href="#">History</a>
+            <ul class="drop-down-menus">
+              <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+              <li class="sub-head"><a data-page="victoria-crosses" class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+              <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+            </ul>
+          </li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+        <br>
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn">Be a Donor</a>
+      </nav>
+
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn">Be a Donor</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-donor" class="section-white orient-center fade-in">
+        <h2 class="display text-center">Contact Us</h2>
+        <div class="orient-left">
+          <!-- Form -->
+          <form class="container-1 orient-center">
+              <div class="container-inline">
+              <label class="hidden" for="first_name">First Name</label>
+              <input name="first_name" type="text" placeholder="First Name" id="first_name">
+
+              <label class="hidden" for="last_name">Last Name</label>
+              <input name="last_name" type="text" placeholder="Last Name" id="last_name">
+              </div>
+
+              <div class="container-inline">
+              <label class="hidden" for="email" >Email</label>
+              <input name="email" type="text" placeholder="Your Email" id="contact-email">
+
+              <label class="hidden" for="email">Phone Number</label>
+              <input name="phone_number" type="text" placeholder="Your Phone Number" id="phone_number">
+              </div>
+
+              <label class="hidden" for="contact_message">Message</label>
+              <textarea name="contact_message" id="contact_message" placeholder="Please tell us what concerns you or any questions you need answered."></textarea>
+
+              <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section id="contact-info" class="section-white fade-in">
+        <h2 class="hidden">Contact Information</h2>
+
+        <div id="contact-detail">
+          <div class="container-1 orient-left">
+            <h3 class="header">Brothers in Arms Team</h3>
+            <p class="body-text">A 708, SHIPRA KRISHNA VISTA, Ahinsa Khand 1, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India</p>
+            <a href="#" class="body-text">+91 89754 01959</a>
+          </div>
+
+          <div class="container-1 orient-left">
+            <h3 class="header">Shrishti Foundation</h3>
+            <p class="body-text">A 708, SHIPRA KRISHNA VISTA, Ahinsa Khand 1, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India</p>
+            <a href="#" class="body-text">+91 89754 01959</a>
+          </div>
+        </div>
+
+        <!-- Maps -->
+        <div id="map" class="container-1 orient-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5837.4984596147015!2d-81.25360142325752!3d42.9835558711418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3779e9706c1%3A0x6b0cea8bf906455!2sFanshawe%20Downtown%20Campus!5e0!3m2!1sen!2sca!4v1738002055311!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <!-- Sponsorship -->
+      <section id="sponsorship" class="section-grey orient-left fade-in">
+        <div class="container-1">
+          <h2 class="header text-center">Sponsorship</h2>
+          <a href="#" class="ter-btn">Fill a Form</a>
+        </div>
+
+        <div class="container-1">
+          <h3 class="sub-head">What is a sponsor?</h3>
+          <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+        </div>
+      </section>
+
+      <!-- Volunteer -->
+      <section id="volunteer" class="section-white orient-left fade-in">
+        <div class="container-1">
+          <h2 class="header text-center">Volunteer</h2>
+          <a href="#" class="sec-btn">Fill a Form</a>
+        </div>
+
+        <div class="container-1">
+          <h3 class="sub-head">What is a Volunteer?</h3>
+          <p class="body-text">Brothers in Arms" is a heartfelt initiative to honor the bravery and camaraderie of Indian and Canadian soldiers who stood side by side during World War I. Their unwavering spirit and sacrifices made a significant impact on the course of history. This memorial park aims to preserve their legacy, inspire future generations, and serve as a lasting tribute to their shared commitment to freedom and peace. Join us in creating a space where their stories of courage and unity will live on forever.</p>
+        </div>
+      </section>
+
+      <!-- FaQ -->
+      <section id="faq" class="section-grey orient-center fade-in">
+        <div class="container-1 orient-center">
+          <h2 class="header text-center">FaQ</h2>
+          <p class="body-text text-center">Confused? Try have a look at out Frequently Asked Questions.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              What is the purpose of this project?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">This project is here to commemorate our Indian brother that fight alongside Canadian Army in World War 1.</p>
+            </div>
+          </div>
+
+          <div class="line-seperator"></div>
+
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              How can I Contribute?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">You can simply be a donor or share this website to your friends.</p>
+            </div>
+          </div>
+
+          <div class="line-seperator"></div>
+        
+          <div class="faq-item">
+            <button class="faq-question sub-head">
+              What will I get after donating?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p class="body-text">You will be a part of this project and get a unique merchandise.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <!-- COPY THIS TO EVERY PAGE! -->
+      <!-- Join us CTA -->
+      <section id="join-us" class="section-white orient-center fade-in">
+        <img src="./images/logo/logo-1.svg" alt="Brothers in Arms Logo">
+        <h2 class="display text-center">Join Us to Commemorate</h2>
+
+        <div class="container orient-center">
+          <h3 class="body-text text-center">Subscribe for Latest News and Updates</h3>
+
+          <form class="container-1 orient-center">
+            <!-- Newsletter Subscribe -->
+            <label class="hidden" for="email">Email</label>
+            <input name="email" type="text" placeholder="Your Email" id="email">
+
+            <input type="submit" value="Send" class="prim-btn">
+          </form>
+        </div>
+
+        <div class="line-seperator"></div>
+
+        <div class="container-1 orient-center">
+          <p class="display text-center">Build with Us</p>
+
+          <a href="#" class="prim-btn">Be a Donor</a>
+        </div>
+      </section>
+
+      
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="">
+      <!-- Footer Sitemap -->
+      <nav id="foot-sitemap">
+        <ul>
+          <li class="sub-head"><a data-page="index" class="navlink" href="index.html">Home</a></li>
+          <li class="sub-head"><a data-page="history" class="navlink" href="history.html">History</a></li>
+          <li class="sub-head"><a class="navlink" href="victoria-crosses.html">Victoria Crosses</a></li>
+          <li class="sub-head"><a data-page="letters" class="navlink" href="letters.html">Letters</a></li>
+          <li class="sub-head"><a data-page="blogs" class="navlink" href="blogs.html">Blogs</a></li>
+          <li class="sub-head"><a data-page="events" class="navlink" href="events.html">Events</a></li>
+          <li class="sub-head"><a data-page="contact" class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-inline">
+        <a href="#" class="caption text-left">Credits</a>
+        <a href="#" class="caption text-left">Terms of Service</a>  
+      </div>
+
+      <div class="container-inline">
+        <p class="caption text-right">Shrishti Foundation &copy; 2025 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
