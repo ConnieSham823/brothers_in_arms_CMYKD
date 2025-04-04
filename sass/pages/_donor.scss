@@ -1,16 +1,5 @@
 @use "../abstracts/variables" as v;
 
-#hero-donor {
-    padding: 120px 24px;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-image: url(../images/map-texture.svg);
-    background-size: cover;
-}
 
 .hero-donor {
     padding: 120px 24px;
@@ -22,6 +11,30 @@
     position: relative;
     background-image: url(../images/map-texture.svg);
     background-size: cover;
+
+    #img-1 {
+        width: 200px;
+        top: -10px;
+        right: 5%;
+    }
+
+    #img-2 {
+        width: 100px;
+        top: 50px;
+        left: 10%;
+    }
+
+    #img-3 {
+        width: 180px;
+        bottom: 20px;
+        left: 5%;
+    }
+
+    #img-4 {
+        width: 220px;
+        bottom: -20px;
+        right: -5%;
+    }
 }
 
 // Package Carousel
@@ -183,14 +196,33 @@
 
 
 @media screen and (min-width: 768px) {
-    #hero-donor {
-        padding: 150px 24px;
-        margin-top: 120px;
-    }
-
     .hero-donor {
         padding: 150px 24px;
         margin-top: 120px;
+
+        #img-1 {
+            width: 250px;
+            top: 20px;
+            right: -5%;
+        }
+    
+        #img-2 {
+            width: 220px;
+            top: 10px;
+            left: 10%;
+        }
+    
+        #img-3 {
+            width: 250px;
+            bottom: 30px;
+            left: 5%;
+        }
+    
+        #img-4 {
+            width: 280px;
+            bottom: 50px;
+            right: -2%;
+        }
     }
 
     #about-donor {
@@ -275,14 +307,33 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #hero-donor {
-        padding: 200px 24px;
-        margin-top: 100px;
-    }
-
     .hero-donor {
         padding: 200px 24px;
         margin-top: 100px;
+
+        #img-1 {
+            width: 350px;
+            top: 50px;
+            right: 10%;
+        }
+    
+        #img-2 {
+            width: 250px;
+            top: 80px;
+            left: 5%;
+        }
+    
+        #img-3 {
+            width: 350px;
+            bottom: 50px;
+            left: 10%;
+        }
+    
+        #img-4 {
+            width: 420px;
+            bottom: 50px;
+            right: -5%;
+        }
     }
 
 
