@@ -19,6 +19,25 @@
     color: v.$white;
 }
 
+.prim-btn-red {
+    padding: 12px 18px 12px 18px;
+    background-color: v.$red;
+    color: v.$white;
+    font-family: v.$body-font;
+    font-size: v.$body;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+
+.prim-btn-red:hover {
+    background-color: rgb(165, 0, 0);
+    color: v.$white;
+}
+
+
 .sec-btn {
     padding: 12px 18px 12px 18px;
     border: solid v.$black .5px;

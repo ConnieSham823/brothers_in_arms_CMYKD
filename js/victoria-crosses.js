@@ -26,6 +26,7 @@ const app = Vue.createApp({
       })
       .then((data) => {
         this.victorias = data;
+        window.victoriasData = data;
         console.log("Fetched data:", this.victorias);
       })
       .catch((err) => {
