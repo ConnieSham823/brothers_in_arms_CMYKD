@@ -97,8 +97,7 @@
         cursor: pointer;
         
         .container-inline {
-            display: flex;
-            flex-direction: row;
+            display: block;
         }
 
         img {
@@ -106,6 +105,10 @@
             height: 200px;
             object-fit: cover;
         }
+
+        .container {
+            margin-top: 8px; 
+          }
     }
 
 }
@@ -145,12 +148,6 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             padding: 48px;
-            
-            .container-inline {
-                justify-content: space-between;
-                display: flex;
-                flex-direction: row;
-            }
 
             img {
                 width: 100%;
@@ -196,12 +193,6 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 32px;
             padding: 48px;
-            
-            .container-inline {
-                justify-content: space-between;
-                display: flex;
-                flex-direction: row;
-            }
 
             img {
                 width: 100%;

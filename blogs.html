@@ -19,20 +19,14 @@
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
     ></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"
-    ></script>
-
     <!-- Vue -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js
     "
     ></script>
-
     <!-- Main JS -->
-    <script defer type="module" src="./js/home.js"></script>
+    <script defer type="module" src="./js/blogs.js"></script>
   </head>
 
   <body>
@@ -99,12 +93,12 @@
           </li>
         </ul>
         <br />
-        <a id="donor-btn-mobile" href="donor.html" class="prim-btn"
+        <a id="donor-btn-mobile" href="donor.html" class="prim-btn-red"
           >Be a Donor</a
         >
       </nav>
 
-      <a id="donor-btn-desktop" href="donor.html" class="prim-btn"
+      <a id="donor-btn-desktop" href="donor.html" class="prim-btn-red"
         >Be a Donor</a
       >
     </header>
@@ -112,212 +106,117 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
-      <section id="hero" class="section-white orient-center fade-in">
-        <h2 class="hidden display text-center">
-          Brothers in Arms Memorial Park
-        </h2>
-        <!-- <p class="sec-head t-red text-center">MEMORIAL PARK</p> -->
+      <section id="blogs-hero" class="section-white orient-center fade-in">
+        <h2 class="display text-center">Blogs</h2>
 
-        <div class="hero-banner-text">
-          <p class="display text-center">
-            STICK to <span id="changing-text">Honor</span>
-          </p>
-
-          <p class="display text-center">
-            STICK for Their <span class="t-orange bold">Tomorrow</span>
-          </p>
-        </div>
-      </section>
-
-      <!-- Video Intro -->
-      <section id="hero-video" class="fade-in">
-        <div>
-          <video controls preload="metadata">
-            <source src="./video/video-1.mp4" type="video/mp4" />
-            <!-- <source src="./video/video-placeholder.webm" type="video/webm"> -->
-            <p>
-              Ooops, something went wrong. You may be using an oudated browser
-              or have javascript disabled.
-            </p>
-          </video>
-        </div>
-      </section>
-
-      <!-- Intro -->
-      <section id="intro" class="fade-in">
-        <h2 class="hidden">About Brothers in arms</h2>
-
-        <div class="container">
-          <img
-            src="./images/brother_pic_main_leafs.png"
-            alt="Brothers in Arms"
-          />
-
-          <div class="container-1 orient-left">
-            <h3 class="header">Memory of Brothers in Arms</h3>
-            <p class="body-text">
-              During World War I, over 135,000 Indian soldiers fought alongside
-              Canadian troops in battles across Europe, including the Somme,
-              Vimy Ridge, and Flanders Fields. Their shared sacrifice and
-              bravery were critical in shaping history, yet their stories remain
-              largely untold.
-            </p>
-
-            <p class="body-text">
-              The Brothers in Arms Memorial is a first-of-its-kind initiative in
-              Canada dedicated to honoring these soldiers' unity, courage, and
-              sacrifices. This project serves as a living tribute, ensuring that
-              future generations remember the bond that brought these two
-              nations together on the battlefield.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Park -->
-      <section id="abt-park" class="fade-in">
-        <h2 class="hidden">About Brothers in arms</h2>
-
-        <div class="container">
-          <img src="./images/park_1_maple_leafs.png" alt="Memorial Park" />
-
-          <div class="container-1 orient-left">
-            <h3 class="header">Entrance gate</h3>
-            <p class="body-text">
-              Welcome to the Brothers in Arms Memorial Park, a tribute to the
-              bravery and unity of Indian and Canadian soldiers who stood
-              together in World War I. Located in London, Ontario, this park
-              serves as a lasting symbol of their shared sacrifices and enduring
-              legacy. Soon, a Memory Rock will be unveiled, inviting visitors to
-              reflect, remember, and honor their heroic journey.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonies -->
-      <section id="testimonies" class="section-grey orient-center fade-in">
-        <h2 class="hidden">Testimonies</h2>
-
-        <!-- Testimony Lists - Carousel -->
-        <ul>
-          <li class="container-1 orient-center">
-            <p class="quote text-center">
-              “I believe that Indian and Canadian should be united together as
-              what our ancestors did back in the days”
-            </p>
-            <p class="body-text">-Amir Khan (Canadian Citizen)</p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Image Gallery 1 -->
-      <section id="gallery" class="section-white orient-center fade-in">
-        <h2 class="hidden">Brothers in Arms Gallery</h2>
-
-        <!-- Sliding Image -->
-        <div class="sliding-img">
-          <div class="img-slide">
-            <img src="./images/slide-1.jpg" alt="Image of War" />
-            <img src="./images/slide-2.jpg" alt="Image of War" />
-            <img src="./images/slide-3.jpg" alt="Image of War" />
-            <img src="./images/slide-4.jpg" alt="Image of War" />
-            <img src="./images/slide-5.jpg" alt="Image of War" />
-            <img src="./images/slide-6.jpg" alt="Image of War" />
-            <img src="./images/slide-7.jpg" alt="Image of War" />
-            <img src="./images/slide-8.jpg" alt="Image of War" />
-            <img src="./images/slide-9.jpg" alt="Image of War" />
-            <img src="./images/slide-10.jpg" alt="Image of War" />
-            <img src="./images/slide-11.jpg" alt="Image of War" />
-            <img src="./images/slide-12.jpg" alt="Image of War" />
-          </div>
-
-          <div class="img-slide">
-            <img src="./images/slide-1.jpg" alt="Image of War" />
-            <img src="./images/slide-2.jpg" alt="Image of War" />
-            <img src="./images/slide-3.jpg" alt="Image of War" />
-            <img src="./images/slide-4.jpg" alt="Image of War" />
-            <img src="./images/slide-5.jpg" alt="Image of War" />
-            <img src="./images/slide-6.jpg" alt="Image of War" />
-            <img src="./images/slide-7.jpg" alt="Image of War" />
-            <img src="./images/slide-8.jpg" alt="Image of War" />
-            <img src="./images/slide-9.jpg" alt="Image of War" />
-            <img src="./images/slide-10.jpg" alt="Image of War" />
-            <img src="./images/slide-11.jpg" alt="Image of War" />
-            <img src="./images/slide-12.jpg" alt="Image of War" />
-          </div>
-
-          <div class="img-slide">
-            <img src="./images/slide-1.jpg" alt="Image of War" />
-            <img src="./images/slide-2.jpg" alt="Image of War" />
-            <img src="./images/slide-3.jpg" alt="Image of War" />
-            <img src="./images/slide-4.jpg" alt="Image of War" />
-            <img src="./images/slide-5.jpg" alt="Image of War" />
-            <img src="./images/slide-6.jpg" alt="Image of War" />
-            <img src="./images/slide-7.jpg" alt="Image of War" />
-            <img src="./images/slide-8.jpg" alt="Image of War" />
-            <img src="./images/slide-9.jpg" alt="Image of War" />
-            <img src="./images/slide-10.jpg" alt="Image of War" />
-            <img src="./images/slide-11.jpg" alt="Image of War" />
-            <img src="./images/slide-12.jpg" alt="Image of War" />
-          </div>
-        </div>
+        <p class="body-text text-center">All Updates</p>
       </section>
 
       <!-- Latest Blog -->
-      <section id="latest-blogs" class="section-white fade-in">
-        <div class="container-inline">
-          <h2 class="header">Latest Blogs</h2>
-          <a href="blogs.html" class="prim-btn">More Blogs</a>
-        </div>
-
-        <!-- Blogs [Dynamic] -->
-        <div id="app" class="carousel-cont">
-          <div class="carousel-item-gen-two">
-            <div class="container carousel-slide-two">
-              <img
-                :src="`../brothers_in_arms_CMYKD/images/${blogs[0].images[2].image_link}`"
-                :alt="`${blogs[0].images[2]?.image_alt}`"
-              />
-              <div class="container-1 orient-left">
-                <h3 class="sub-head" v-text="blogs[0].blog_title"></h3>
-                <p class="body-text" v-text="blogs[0].blog_content"></p>
-                <p class="caption" v-text="blogs[0].blog_date"></p>
-
-                <a
-                  :href="`./blogs-detail.html?id=${blogs[0].blog_id}`"
-                  class="sec-btn"
-                  >Read More</a
-                >
-              </div>
-            </div>
-
-            <div class="container carousel-slide-two">
-              <img
-                :src="`../brothers_in_arms_CMYKD/images/${blogs[1].images[2]?.image_link}`"
-                :alt="`${blogs[1].images[2]?.image_alt}`"
-              />
-              <div class="container-1 orient-left">
-                <h3 class="sub-head" v-text="blogs[1].blog_title"></h3>
-                <p class="body-text" v-text="blogs[1].blog_content"></p>
-                <p class="caption" v-text="blogs[1].blog_date"></p>
-
-                <a
-                  :href="`./blogs-detail.html?id=${blogs[1].blog_id}`"
-                  class="sec-btn"
-                  >Read More</a
-                >
-              </div>
-            </div>
+      <div id="app" class="section-white fade-in">
+        <section id="latest-blogs">
+          <div class="container-inline">
+            <h2 class="header">Latest Blogs</h2>
+            <a href="blogs.html" class="prim-btn">More Blogs</a>
           </div>
 
-          <!-- Pagination Bullets -->
-          <ul class="carousel-pagination-two">
-            <li class="carousel-bullet-two active" data-index="0"></li>
-            <li class="carousel-bullet-two" data-index="1"></li>
-          </ul>
-        </div>
-      </section>
+          <!-- Blogs [Dynamic] -->
+          <div class="carousel-cont">
+            <div class="carousel-item-gen-two">
+              <div class="container carousel-slide-two">
+                <img
+                  :src="`./images/${blogs[0].images[2]?.image_link}`"
+                  :alt="`${blogs[0].images[2]?.image_alt}`"
+                />
+                <div class="container-1 orient-left">
+                  <h3 class="sub-head" v-text="blogs[0].blog_title"></h3>
+                  <p class="body-text" v-text="blogs[0].blog_content"></p>
+                  <p class="caption" v-text="blogs[0].blog_date"></p>
+
+                  <a
+                    :href="`./blogs-detail.html?id=${blogs[0].blog_id}`"
+                    class="sec-btn"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+
+              <div class="container carousel-slide-two">
+                <img
+                  :src="`./images/${blogs[1].images[2]?.image_link}`"
+                  :alt="`${blogs[1].images[2]?.image_alt}`"
+                />
+                <div class="container-1 orient-left">
+                  <h3 class="sub-head" v-text="blogs[1].blog_title"></h3>
+                  <p class="body-text" v-text="blogs[1].blog_content"></p>
+                  <p class="caption" v-text="blogs[1].blog_date"></p>
+
+                  <a
+                    :href="`/blogs-detail.html?id=${blogs[1].blog_id}`"
+                    class="sec-btn"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Bullets -->
+            <ul class="carousel-pagination-two">
+              <li class="carousel-bullet-two active" data-index="0"></li>
+              <li class="carousel-bullet-two" data-index="1"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Other Blog -->
+      <div id="app2" class="section-grey fade-in">
+        <section id="other-blogs">
+          <div class="container-inline">
+            <h2 class="header">Other Blogs</h2>
+          </div>
+
+          <!-- Blogs [Dynamic] -->
+          <div class="carousel-cont">
+            <div
+              class="carousel-item-gen"
+              data-carousel-type="type1"
+              v-if="blogs.length > 0"
+            >
+              <div
+                class="container carousel-slide"
+                v-for="(blog, index) in blogs"
+                :key="blog.blog_id"
+              >
+                <img
+                  v-if="blog.images && blog.images.length"
+                  :src="`./images/${blog.images[2].image_link}`"
+                  :alt="blog.images[0].image_alt || 'Blog Image'"
+                />
+
+                <div class="container-1 orient-left">
+                  <h3 class="sub-head">{{ blog.blog_title }}</h3>
+                  <p class="body-text">{{ blog.blog_content }}</p>
+                  <p class="caption">{{ blog.blog_date }}</p>
+
+                  <a
+                    :href="`./blogs-detail.html?id=${blog.blog_id}`"
+                    class="sec-btn"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Bullets -->
+            <ul class="carousel-pagination">
+              <li class="carousel-bullet active" data-index="0"></li>
+              <li class="carousel-bullet" data-index="1"></li>
+              <li class="carousel-bullet" data-index="2"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <!-- Social Media -->
       <section id="social-media" class="section-grey fade-in">

@@ -9,7 +9,6 @@
 
     <!-- Plyr -->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-
     <!-- GSAP Library -->
     <script
       defer
@@ -22,7 +21,7 @@
     <!-- Vue -->
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Main JS -->
-    <script defer type="module" src="./js/letters.js"></script>
+    <script defer type="module" src="./js/victoria-crosses.js"></script>
   </head>
 
   <body>
@@ -102,32 +101,97 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- Hero Section -->
-      <section id="letters-hero" class="section-white orient-center fade-in">
-        <h2 class="display">Letters</h2>
+      <section id="victoria-hero" class="section-white orient-center fade-in">
+        <h2 class="display">Victoria Crosses</h2>
 
-        <p class="body-text text-center">Voices from the Frontline</p>
+        <p class="body-text text-center">Bravery Beyond Borders</p>
       </section>
 
-      <!-- Letters from Soldiers -->
-      <section id="letters-list" class="section-white orient-center fade-in">
-        <h2 class="hidden">Letters from Soldiers</h2>
+      <!-- About Victoria Crosses -->
+      <section id="about-vc" class="section-white orient-center fade-in">
+        <h2 class="hidden">About Victoria Crosses</h2>
+        <!-- Victoria Crosses -->
+        <img src="./images/victoria-cross.png" alt="Victoria Cross" />
 
-        <!-- Letters Carousel -->
-        <div id="app" class="letter-carousel">
-          <div
-            v-for="(letter, index) in letters"
-            :key="letter_id"
-            class="card-letter"
-          >
-            <h3 class="body-text bold">
-              {{letter.letter_name}} <br />
-              {{letter.letter_context}} {{letter.letter_date}}
-            </h3>
+        <!-- Content -->
+        <div class="container-1 orient-center">
+          <p class="body-text text-center">
+            The Victoria Cross (VC) is the highest military honor awarded for
+            extraordinary bravery in combat. Established in 1856 by Queen
+            Victoria, the medal is given to soldiers who display valor beyond
+            duty, often in the face of certain death.
+          </p>
 
-            <p class="handwrite">{{letter.letter_content}}</p>
+          <p class="body-text text-center">
+            During World War I, both Canadian and Indian soldiers fought side by
+            side, demonstrating incredible courage on the battlefield. Their
+            heroic actions earned them the Victoria Cross, cementing their place
+            in history.
+          </p>
+        </div>
+      </section>
+
+      <!-- Victoria Crosses Info -->
+      <section id="vc-summary" class="fade-in">
+        <h2 class="hidden">Victoria Crosses Medal Information</h2>
+
+        <div id="vc-info">
+          <div id="ind-vc" class="container-1">
+            <h3 class="display">11</h3>
+            <p class="sub-head">Indian Army Soldiers</p>
+            <p class="body-text">
+              Received the Victoria Cross for bravery during WWI.
+            </p>
+          </div>
+
+          <div id="cad-vc" class="container-1">
+            <h3 class="display">69</h3>
+            <p class="sub-head">Canadian Army Soldiers</p>
+            <p class="body-text">
+              Were awarded the Victoria Cross for acts of heroism.
+            </p>
           </div>
         </div>
       </section>
+
+      <!-- Victoria Crosses Medal Winner -->
+      <div id="app" class="section-white fade-in">
+        <section id="vc-medal-winners">
+          <h2 class="hidden">Victoria Crosses Medal Winners</h2>
+
+          <!-- Inject Content with Array -->
+          <div class="vc-carousel">
+            <div class="vc--carousel-item">
+              <div class="vc-winner-cont slide-vc">
+                <div
+                  v-for="(receipt, index) in victorias"
+                  :key="receipt.receipt_id"
+                  class="container-inline"
+                  :data-index="index"
+                >
+                  <img
+                    v-if="receipt.images && receipt.images.length"
+                    :src="`./images/${receipt.images[0].image_link}`"
+                    :alt="receipt.image_alt"
+                  />
+
+                  <div class="container">
+                    <p class="sub-head">{{ receipt.name }}</p>
+                    <p class="caption">{{ receipt.unit }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination Bullets -->
+            <ul class="pagination-vc">
+              <li class="page-number active" data-index="0">1</li>
+              <li class="page-number" data-index="1">2</li>
+              <li class="page-number" data-index="2">3</li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <!-- COPY THIS TO EVERY PAGE! -->
       <!-- Join us CTA -->
@@ -163,11 +227,16 @@
         </div>
       </section>
 
-      <!-- Letters Lightbox -->
-      <div class="letters-lightbox"></div>
-      <div class="letters-lightbox-cont">
-        <button class="letters-lightbox-close">&times;</button>
-        <div class="content"></div>
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+          <span class="close">&times;</span>
+          <img class="hero-img" />
+          <h2 class="lightbox-title header"></h2>
+          <p class="lightbox-text body-text"></p>
+          <ul class="achievements body-text"></ul>
+          <img class="flag" />
+        </div>
       </div>
     </main>
 
