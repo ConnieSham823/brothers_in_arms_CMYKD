@@ -116,6 +116,12 @@
     overflow: hidden;
 }
 
+// Video
+#donor-video {
+    padding: 24px;
+    margin-bottom: 48px;
+}
+
 // Sliding Logo Sponsors
 @keyframes slider {
     from {
@@ -304,6 +310,12 @@
             }
         }
     }
+
+    // Video
+    #donor-video {
+        padding: 0 48px 48px 48px;
+        margin-bottom: 48px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -389,6 +401,12 @@
 
     #support-cta {
         padding: 80px 24px;
+    }
+
+    // Video
+    #donor-video {
+        padding: 0 144px 48px 144px;
+        margin-bottom: 48px;
     }
     
 }
