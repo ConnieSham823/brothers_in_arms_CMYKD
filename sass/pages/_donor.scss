@@ -114,6 +114,13 @@
 #sponsors {
     margin: 40px auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        padding-left: 24px;
+    }
 }
 
 // Video
@@ -316,6 +323,13 @@
         padding: 0 48px 48px 48px;
         margin-bottom: 48px;
     }
+
+    #sponsors {
+    
+        h2 {
+            padding-left: 36px;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -407,6 +421,13 @@
     #donor-video {
         padding: 0 144px 48px 144px;
         margin-bottom: 48px;
+    }
+
+    #sponsors {
+    
+        h2 {
+            padding-left: 224px;
+        }
     }
     
 }
