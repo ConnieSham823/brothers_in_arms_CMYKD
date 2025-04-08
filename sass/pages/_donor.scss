@@ -45,6 +45,7 @@
 
 #package-carousel {
     display: flex;
+    flex-direction: row; 
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -107,7 +108,33 @@
 
 // Donors
 #donors {
-    margin: 0 auto;
+    flex-direction: column; 
+
+    #top-donor {
+      width: 100%;
+      overflow-x: auto;
+      padding-left: 24px;
+
+      h3 {
+        margin-right: 24px;
+      }
+  
+      .container-donorlist {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 16px 24px;
+            scrollbar-width: none;
+        }
+  
+      .container-donorlist li {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            padding: 12px;
+        }
+    }
 }
 
 // Sponsors
@@ -256,9 +283,15 @@
             padding-right: 10px;
             padding-top: 24px;
 
+            h3 {
+                margin: 0;
+            }
+
             .container-donorlist {
                 align-items: center;
                 justify-content: center;
+                display: flex;
+                flex-direction: column;
             }
             
         }
@@ -426,7 +459,7 @@
     #sponsors {
     
         h2 {
-            padding-left: 224px;
+            padding-left: 132px;
         }
     }
     

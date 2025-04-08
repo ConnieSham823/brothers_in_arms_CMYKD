@@ -30,6 +30,10 @@
     justify-content: center;
     align-items: center;
     transition: .3s all ease-in-out;
+
+    a {
+        color: v.$white;
+    }
 }
 
 .prim-btn-red:hover {
