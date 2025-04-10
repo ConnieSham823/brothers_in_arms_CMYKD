@@ -45,6 +45,7 @@
 
 #package-carousel {
     display: flex;
+    flex-direction: row; 
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -107,13 +108,46 @@
 
 // Donors
 #donors {
-    margin: 0 auto;
+    flex-direction: column; 
+
+    #top-donor {
+      width: 100%;
+      overflow-x: auto;
+      padding-left: 24px;
+
+      h3 {
+        margin-right: 24px;
+      }
+  
+      .container-donorlist {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 16px 24px;
+            scrollbar-width: none;
+        }
+  
+      .container-donorlist li {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            padding: 12px;
+        }
+    }
 }
 
 // Sponsors
 #sponsors {
     margin: 40px auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        padding-left: 24px;
+    }
 }
 
 // Video
@@ -249,9 +283,15 @@
             padding-right: 10px;
             padding-top: 24px;
 
+            h3 {
+                margin: 0;
+            }
+
             .container-donorlist {
                 align-items: center;
                 justify-content: center;
+                display: flex;
+                flex-direction: column;
             }
             
         }
@@ -315,6 +355,13 @@
     #donor-video {
         padding: 0 48px 48px 48px;
         margin-bottom: 48px;
+    }
+
+    #sponsors {
+    
+        h2 {
+            padding-left: 36px;
+        }
     }
 }
 
@@ -407,6 +454,13 @@
     #donor-video {
         padding: 0 144px 48px 144px;
         margin-bottom: 48px;
+    }
+
+    #sponsors {
+    
+        h2 {
+            padding-left: 132px;
+        }
     }
     
 }
